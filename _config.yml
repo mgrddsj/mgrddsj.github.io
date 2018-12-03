@@ -79,5 +79,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: gh_token@github.com:mgrddsj/mgrddsj.github.io.git
+  repository: https://gh_token@github.com/mgrddsj/mgrddsj.github.io.git
   branch: master
