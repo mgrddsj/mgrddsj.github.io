@@ -90,4 +90,3 @@ deploy:
   type: git
   repository: https://gh_token@github.com/mgrddsj/mgrddsj.github.io.git
   branch: master
-  message: "Site upload: $TRAVIS_BUILD_NUMBER"
