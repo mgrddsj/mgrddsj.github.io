@@ -6,7 +6,7 @@ tags:
 # 免费是最昂贵的东西-演讲稿
 
 ## 引子
-大家有没有在玩游戏的时候遇到过“播放一个广告来复活”的情况？现在很多
+大家有没有在玩游戏的时候遇到过“播放一个广告来复活”的情况？现在很多游戏都是这种做法——免费下载，付费变强，穷人（不想付钱）的可以看广告来变强一点点。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjQyNTI0NV19
+eyJoaXN0b3J5IjpbLTE5NjY5MzgzMDJdfQ==
 -->
