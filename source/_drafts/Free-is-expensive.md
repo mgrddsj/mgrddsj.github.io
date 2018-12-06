@@ -5,6 +5,8 @@ tags:
 ---
 # 免费是最昂贵的东西-演讲稿
 
+## 引子
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjk0NTc4MF19
+eyJoaXN0b3J5IjpbMTY4Njg2MzExN119
 -->
