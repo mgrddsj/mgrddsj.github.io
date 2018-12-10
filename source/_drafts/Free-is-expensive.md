@@ -22,7 +22,7 @@ tags:
 
 ## 后果
 
-大家也都很清楚后果，轻则被垃圾电话骚扰，重则受到完全控制，但是为什么大家还是还继续去“送人头”呢？还不是因为那贪便宜的本性》
+大家也都很清楚后果，轻则被垃圾电话骚扰，重则受到完全控制，但是为什么大家还是还继续去“送人头”呢？还不是因为那贪便宜的本性？
 
 ## 总结
 
@@ -75,6 +75,6 @@ tags:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTU2MDI0OSwtMzQ2NTY1MDQzLC0xND
-gyNDU1Nzk2LC0xMTk1NjkxMjUwLC0xNTgzODk3MTcyXX0=
+eyJoaXN0b3J5IjpbNTkzMjA5Nzc5LC0zNDY1NjUwNDMsLTE0OD
+I0NTU3OTYsLTExOTU2OTEyNTAsLTE1ODM4OTcxNzJdfQ==
 -->
