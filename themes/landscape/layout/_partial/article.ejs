@@ -28,6 +28,12 @@
         <a href="<%- post.permalink %>#lv-container" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
       <%- partial('post/tag') %>
+      <% <h1 class="commentSec-title"> %>
+        <% 关于此博客 %>
+      <% </h1> %>
+      <% if (!index && post.comments) { %>
+        <%- partial('livere') %>
+      <% } %>
     </footer>
   </div>
   <% if (!index){ %>
@@ -35,6 +41,3 @@
   <% } %>
 </article>
 
-<% if (!index && post.comments) { %>
-  <%- partial('livere') %>
-<% } %>
