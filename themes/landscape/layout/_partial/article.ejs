@@ -36,13 +36,9 @@
 </article>
 
 <% if (!index && post.comments && theme.livere.on){ %>
-  <%- partial('post/livere', { 
-
-  key: post.slug, 
-
-  title: post.title, 
-
-  url: config.url+url_for(post.path) 
-
-  }) %>
+<section id="comments">
+  <div id="lv-container">
+    <noscript>Please enable JavaScript to view the comments powered by 来必力.</a></noscript>
+  </div>
+</section>
 <% } %>
