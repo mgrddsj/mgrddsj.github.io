@@ -8,8 +8,8 @@ subtitle: Jesse 的小窝
 description: 杂七杂八的博客
 keywords:
 author: Jesse Xu
-language: 
-timezone:
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -82,7 +82,7 @@ plugin:
 feed:
 type: atom
 path: atom.xml
-limit: 20
+limit: 0
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
