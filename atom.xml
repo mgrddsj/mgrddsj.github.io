@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.jessexu.me/"/>
-  <updated>2018-12-27T15:34:21.000Z</updated>
+  <updated>2018-12-27T13:34:21.000Z</updated>
   <id>http://www.jessexu.me/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>关于“优雅”栏目</title>
     <link href="http://www.jessexu.me/2018/12/27/%E5%85%B3%E4%BA%8E%E4%BC%98%E9%9B%85%E6%A0%8F%E7%9B%AE/"/>
     <id>http://www.jessexu.me/2018/12/27/关于优雅栏目/</id>
-    <published>2018-12-27T15:31:55.470Z</published>
-    <updated>2018-12-27T15:34:21.000Z</updated>
+    <published>2018-12-27T15:36:14.350Z</published>
+    <updated>2018-12-27T13:34:21.000Z</updated>
     
     <content type="html"><![CDATA[<p>这个栏目，我主要是写一些“正确使用电脑”的方法。</p><p>写这个栏目，主要是帮助一些使用电脑比较吃力的人。通过这个栏目，你们可以收获很多实用的电脑使用技巧。</p><a id="more"></a><p>讲真，我个人并不是特别厉害的人，不是什么“程序员”——我太弱了，只会那么一点点简单的代码，最多写些bug，配不上叫程序员这么高大上的名字，我还得继续努力才行。我会的东西最多不过是一些用电脑的奇技淫巧，用起来的时候可以非常“秀”，很多人就以为我很厉害了，其实不然。</p><p>视频：人们认为的黑客 V.S. 现实中的黑客</p><p>YouTube: （需要自备梯子，如果加载不出来，请使用优酷链接。）</p><iframe width="560" height="315" src="https://www.youtube.com/embed/HluANRwPyNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>优酷：<a href="http://player.youku.com/embed/XMzQyNjEwMzkyOA==" target="_blank" rel="noopener">播放地址</a>（不是我上传的）</p><p>我小时候就喜欢玩电脑，当然，除了像其他小学同学那样玩4399小游戏还有洛克王国之外，我就算是断了网的操作系统都可以玩上一整天……我似乎对所有操作系统都能快速上手（方便易上手其实也是厂商应该做到的），给我一个我从来没有用过的操作系统，摸两下我就能用起来，给我几天，就能把系统自带应用和设置摸个透（Terminal除外😂）。我对Windows XP, 7, 8, 10 的特性、设置基本都摸得清清楚楚了，自以为可以很好地根据它们的特性，最大程度地用好它们。这都是我平时折腾出来的成果。我希望可以分享出来，方便大家。</p><p>同时，对电脑比较熟悉的人也可以来瞧一瞧，逛一逛，看看有没有令你眼前一亮的技巧，可能也会让你使用电脑/手机的效率提高，也可以来评论一下，给点建议什么的。</p>]]></content>
     
@@ -68,11 +68,12 @@
     <published>2018-12-02T08:58:49.000Z</published>
     <updated>2018-12-26T13:58:53.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>在这个博客之前，我其实已经有过3-4个博客了——都放弃了…</p><p>最近又心血来潮，想写点东西，就开了这么个博客。<br>这也是一件好事——让我学习一下怎么样坚持一件事情。</p><p>这个博客里面的博文大多数都会比较短，<del>因为我懒</del> ，同时大家读起来也比较方便。</p><a id="more"></a><h2 id="为什么开博客网站，而不用现成的？"><a href="#为什么开博客网站，而不用现成的？" class="headerlink" title="为什么开博客网站，而不用现成的？"></a>为什么开博客网站，而不用现成的？</h2><p>主要是不想受到平台的限制，比如说微博、微信、简书等等平台都有各种各样的限制，各种花哨的东西太多了，我不想去研究平台的规则，只是想安安静静自己写点东西而已。</p><p>还有就是想有个性一点，建一个网站的话可以有自己的域名，显得很高大上😂。文章数据也可控一些，不会无法导出。</p><p>不过为了大家容易访问，以后可能也会考虑开一个微信公众号😄。</p><h2 id="博客里会有什么东西？"><a href="#博客里会有什么东西？" class="headerlink" title="博客里会有什么东西？"></a>博客里会有什么东西？</h2><p>杂七杂八，什么东西都可能有。</p><p>目前想到的几大主题：</p><ul><li><p><a href="https://www.jessexu.me/categories/%E4%BC%98%E9%9B%85/">优雅</a></p><ul><li><p>如何优雅、高效地使用电脑 </p><p><a href="https://www.jessexu.me/2018/12/02/%E5%85%B3%E4%BA%8E%E4%BC%98%E9%9B%85%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li></ul></li><li><p>折腾</p><ul><li>一些折腾/搞机的心得、教程</li></ul></li><li><p>每周一键</p><ul><li>每个星期向大家介绍一个快捷键</li></ul></li><li><p>奇思妙想</p><ul><li>这个主题不谈科技，只是生活中的一些奇思妙想</li></ul></li><li><p>资源分享</p><ul><li>分享一些资源</li></ul></li><li><p>PowerPoint</p><ul><li>给大家分享一些做PPT的经验，可能会送一些好看的PPT</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>[置顶文章]</p><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>在这个博客之前，我其实已经有过3-4个博客了——都放弃了…</p><p>最近又心血来潮，想写点东西，就开了这么个博客。<br>这也是一件好事——让我学习一下怎么样坚持一件事情。</p><p>这个博客里面的博文大多数都会比较短，<del>因为我懒</del> ，同时大家读起来也比较方便。</p><a id="more"></a><h2 id="为什么开博客网站，而不用现成的？"><a href="#为什么开博客网站，而不用现成的？" class="headerlink" title="为什么开博客网站，而不用现成的？"></a>为什么开博客网站，而不用现成的？</h2><p>主要是不想受到平台的限制，比如说微博、微信、简书等等平台都有各种各样的限制，各种花哨的东西太多了，我不想去研究平台的规则，只是想安安静静自己写点东西而已。</p><p>还有就是想有个性一点，建一个网站的话可以有自己的域名，显得很高大上😂。文章数据也可控一些，不会无法导出。</p><p>不过为了大家容易访问，以后可能也会考虑开一个微信公众号😄。</p><h2 id="博客里会有什么东西？"><a href="#博客里会有什么东西？" class="headerlink" title="博客里会有什么东西？"></a>博客里会有什么东西？</h2><p>杂七杂八，什么东西都可能有。</p><p>目前想到的几大主题：</p><ul><li><p><a href="https://www.jessexu.me/categories/%E4%BC%98%E9%9B%85/">优雅</a></p><ul><li><p>如何优雅、高效地使用电脑 </p><p><a href="https://www.jessexu.me/2018/12/02/%E5%85%B3%E4%BA%8E%E4%BC%98%E9%9B%85%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li></ul></li><li><p>折腾</p><ul><li>一些折腾/搞机的心得、教程</li></ul></li><li><p>每周一键</p><ul><li>每个星期向大家介绍一个快捷键</li></ul></li><li><p>奇思妙想</p><ul><li>这个主题不谈科技，只是生活中的一些奇思妙想</li></ul></li><li><p>资源分享</p><ul><li>分享一些资源</li></ul></li><li><p>PowerPoint</p><ul><li>给大家分享一些做PPT的经验，可能会送一些好看的PPT</li></ul></li></ul>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;在这个博客之前，我其实已经有过3-4个博客了——都放弃了…&lt;/p&gt;
+      &lt;p&gt;[置顶文章]&lt;/p&gt;
+&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;在这个博客之前，我其实已经有过3-4个博客了——都放弃了…&lt;/p&gt;
 &lt;p&gt;最近又心血来潮，想写点东西，就开了这么个博客。&lt;br&gt;这也是一件好事——让我学习一下怎么样坚持一件事情。&lt;/p&gt;
 &lt;p&gt;这个博客里面的博文大多数都会比较短，&lt;del&gt;因为我懒&lt;/del&gt; ，同时大家读起来也比较方便。&lt;/p&gt;
     
