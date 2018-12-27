@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.jessexu.me/"/>
-  <updated>2018-12-05T12:34:21.000Z</updated>
+  <updated>2018-12-27T15:34:21.000Z</updated>
   <id>http://www.jessexu.me/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>关于“优雅”栏目</title>
-    <link href="http://www.jessexu.me/2018/12/02/%E5%85%B3%E4%BA%8E%E4%BC%98%E9%9B%85%E6%A0%8F%E7%9B%AE/"/>
-    <id>http://www.jessexu.me/2018/12/02/关于优雅栏目/</id>
-    <published>2018-12-02T08:58:49.000Z</published>
-    <updated>2018-12-05T12:34:21.000Z</updated>
+    <link href="http://www.jessexu.me/2018/12/27/%E5%85%B3%E4%BA%8E%E4%BC%98%E9%9B%85%E6%A0%8F%E7%9B%AE/"/>
+    <id>http://www.jessexu.me/2018/12/27/关于优雅栏目/</id>
+    <published>2018-12-27T15:31:55.470Z</published>
+    <updated>2018-12-27T15:34:21.000Z</updated>
     
     <content type="html"><![CDATA[<p>这个栏目，我主要是写一些“正确使用电脑”的方法。</p><p>写这个栏目，主要是帮助一些使用电脑比较吃力的人。通过这个栏目，你们可以收获很多实用的电脑使用技巧。</p><a id="more"></a><p>讲真，我个人并不是特别厉害的人，不是什么“程序员”——我太弱了，只会那么一点点简单的代码，最多写些bug，配不上叫程序员这么高大上的名字，我还得继续努力才行。我会的东西最多不过是一些用电脑的奇技淫巧，用起来的时候可以非常“秀”，很多人就以为我很厉害了，其实不然。</p><p>视频：人们认为的黑客 V.S. 现实中的黑客</p><p>YouTube: （需要自备梯子，如果加载不出来，请使用优酷链接。）</p><iframe width="560" height="315" src="https://www.youtube.com/embed/HluANRwPyNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>优酷：<a href="http://player.youku.com/embed/XMzQyNjEwMzkyOA==" target="_blank" rel="noopener">播放地址</a>（不是我上传的）</p><p>我小时候就喜欢玩电脑，当然，除了像其他小学同学那样玩4399小游戏还有洛克王国之外，我就算是断了网的操作系统都可以玩上一整天……我似乎对所有操作系统都能快速上手（方便易上手其实也是厂商应该做到的），给我一个我从来没有用过的操作系统，摸两下我就能用起来，给我几天，就能把系统自带应用和设置摸个透（Terminal除外😂）。我对Windows XP, 7, 8, 10 的特性、设置基本都摸得清清楚楚了，自以为可以很好地根据它们的特性，最大程度地用好它们。这都是我平时折腾出来的成果。我希望可以分享出来，方便大家。</p><p>同时，对电脑比较熟悉的人也可以来瞧一瞧，逛一逛，看看有没有令你眼前一亮的技巧，可能也会让你使用电脑/手机的效率提高，也可以来评论一下，给点建议什么的。</p>]]></content>
     
@@ -33,6 +33,30 @@
     </summary>
     
       <category term="优雅" scheme="http://www.jessexu.me/categories/%E4%BC%98%E9%9B%85/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于“折腾”栏目</title>
+    <link href="http://www.jessexu.me/2018/12/27/%E5%85%B3%E4%BA%8E%E6%8A%98%E8%85%BE%E6%A0%8F%E7%9B%AE/"/>
+    <id>http://www.jessexu.me/2018/12/27/关于折腾栏目/</id>
+    <published>2018-12-27T15:02:57.000Z</published>
+    <updated>2018-12-27T15:34:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个栏目，可能就没有那么“随和易懂”了，不是给普通人看的。这里面会记录我的“搞机”心得，偏技术向一点。</p><p>当然，这不意味着“我电脑不好”就真的与这个栏目的内容无缘了。我会尽量是教程简单易懂，把我遇到的坑都写出来，尽可能所有人都可以看懂，也可以按我的教程一步一步地做出效果。因为我搞机的时候也常常会遇到这样那样的问题，网上找到的教程跟到一半，出问题了，又不知道怎么解决，就得从头来过。我个人也是比较喜欢追求完美的，经常一个小瑕疵改半天，最后我被骂吹毛求疵，效率低😥……我觉得科技应该是人人可及的，所有人都应该可以享受到科技带来的乐趣。有时候折腾半天，出来的结果真的可以让人很满足。</p><p>懂一点科技的，或者自己也喜欢折腾一些东西的，也可以看看我这里折腾的东西。我折腾的东西可能别人都已经折腾过了，网上也有很多教程，但是网上一些教程可能会图方便，用的方法比较不正规，可能会留下很多坑，所以我一般都会用一些官方的方法。我也会尽量详尽地写出我经过的步骤，遇到什么问题也可以在文章下方评论区问我，我会尽我能力解答。</p><p>大家可以参考一下我之前折腾过的一些东西（可能还没有列全），看看是否感兴趣。感兴趣的可以在这篇介绍下方评论，我有时间可以写一下。（旧的东西我不一定会全写，但新的我会尽量写出来）</p><ul><li>搭建Minecraft Java 版服务器（带端口映射，可在外网访问）</li><li>在Hostinger (现可用000webhost) 免费搭建WordPress 博客</li><li>树莓派 + NextCloud 搭建私有网盘<ul><li>（准备用BT Sync (Resilio Sync) 重新搭建一个，可外网高速访问）（短期内没时间😥）</li></ul></li><li>GitHub Pages + Hexo 搭建博客（这个博客）</li><li>……</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这个栏目，可能就没有那么“随和易懂”了，不是给普通人看的。这里面会记录我的“搞机”心得，偏技术向一点。&lt;/p&gt;
+&lt;p&gt;当然，这不意味着“我电脑不好”就真的与这个栏目的内容无缘了。我会尽量是教程简单易懂，把我遇到的坑都写出来，尽可能所有人都可以看懂，也可以按我的教程一步一步地
+      
+    
+    </summary>
+    
+      <category term="折腾" scheme="http://www.jessexu.me/categories/%E6%8A%98%E8%85%BE/"/>
     
     
   </entry>
