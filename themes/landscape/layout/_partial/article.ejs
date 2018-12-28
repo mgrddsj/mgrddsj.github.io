@@ -28,9 +28,9 @@
         <a href="<%- post.permalink %>#lv-container" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
       <%- partial('post/tag') %>
-      <font size="5.8" face="Source Code Pro"><strong>评论区</strong></font>
-      <a>提示：请先在下方输入框输入用户名快速注册，或用社交账号登陆后再评论。…中有微信QQ等国内登陆方式。未登录就输入评论可能导致评论丢失！</a>
       <% if (!index && post.comments) { %>
+        <font size="5.8" face="Source Code Pro"><strong>评论区</strong></font>
+        <p>提示：请先在下方输入框输入用户名快速注册，或用社交账号登陆后再评论。…中有微信QQ等国内登陆方式。未登录就输入评论可能导致评论丢失！</p>
         <%- partial('livere') %>
       <% } %>
     </footer>
