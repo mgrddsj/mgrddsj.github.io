@@ -18,9 +18,9 @@
   
   <entry>
     <title>关于“优雅”栏目</title>
-    <link href="http://www.jessexu.me/2018/12/27/%E5%85%B3%E4%BA%8E%E4%BC%98%E9%9B%85%E6%A0%8F%E7%9B%AE/"/>
-    <id>http://www.jessexu.me/2018/12/27/关于优雅栏目/</id>
-    <published>2018-12-27T15:40:56.999Z</published>
+    <link href="http://www.jessexu.me/2018/12/28/%E5%85%B3%E4%BA%8E%E4%BC%98%E9%9B%85%E6%A0%8F%E7%9B%AE/"/>
+    <id>http://www.jessexu.me/2018/12/28/关于优雅栏目/</id>
+    <published>2018-12-28T11:16:43.157Z</published>
     <updated>2018-12-27T13:34:21.000Z</updated>
     
     <content type="html"><![CDATA[<p>这个栏目，我主要是写一些“正确使用电脑”的方法。</p><p>写这个栏目，主要是帮助一些使用电脑比较吃力的人。通过这个栏目，你们可以收获很多实用的电脑使用技巧。</p><a id="more"></a><p>讲真，我个人并不是特别厉害的人，不是什么“程序员”——我太弱了，只会那么一点点简单的代码，最多写些bug，配不上叫程序员这么高大上的名字，我还得继续努力才行。我会的东西最多不过是一些用电脑的奇技淫巧，用起来的时候可以非常“秀”，很多人就以为我很厉害了，其实不然。</p><p>视频：人们认为的黑客 V.S. 现实中的黑客</p><p>YouTube: （需要自备梯子，如果加载不出来，请使用优酷链接。）</p><iframe width="560" height="315" src="https://www.youtube.com/embed/HluANRwPyNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>优酷：<a href="http://player.youku.com/embed/XMzQyNjEwMzkyOA==" target="_blank" rel="noopener">播放地址</a>（不是我上传的）</p><p>我小时候就喜欢玩电脑，当然，除了像其他小学同学那样玩4399小游戏还有洛克王国之外，我就算是断了网的操作系统都可以玩上一整天……我似乎对所有操作系统都能快速上手（方便易上手其实也是厂商应该做到的），给我一个我从来没有用过的操作系统，摸两下我就能用起来，给我几天，就能把系统自带应用和设置摸个透（Terminal除外😂）。我对Windows XP, 7, 8, 10 的特性、设置基本都摸得清清楚楚了，自以为可以很好地根据它们的特性，最大程度地用好它们。这都是我平时折腾出来的成果。我希望可以分享出来，方便大家。</p><p>同时，对电脑比较熟悉的人也可以来瞧一瞧，逛一逛，看看有没有令你眼前一亮的技巧，可能也会让你使用电脑/手机的效率提高，也可以来评论一下，给点建议什么的。</p>]]></content>
@@ -33,6 +33,26 @@
     </summary>
     
       <category term="优雅" scheme="http://www.jessexu.me/categories/%E4%BC%98%E9%9B%85/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于“每周一键”栏目</title>
+    <link href="http://www.jessexu.me/2018/12/28/%E5%85%B3%E4%BA%8E%E6%AF%8F%E5%91%A8%E4%B8%80%E9%94%AE%E6%A0%8F%E7%9B%AE/"/>
+    <id>http://www.jessexu.me/2018/12/28/关于每周一键栏目/</id>
+    <published>2018-12-28T10:14:57.000Z</published>
+    <updated>2018-12-28T11:16:43.157Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个栏目，主要是每周给大家推荐一个快捷键。</p><a id="more"></a><p>写这个栏目的初衷，是我觉得在习惯使用各种快捷键之后，用电脑的效率大增。鼠标点点点的确是非常简单直接、容易学习，但是键盘才是真正的效率工具。许多东西，鼠标点半天都还没好，键盘一个快捷键就搞定了，效率高很多。我现在都已经习惯了工作的时候键盘不离手了。</p><p>到现在，我还看见很多不知道 Ctrl+C, Ctrl+V 的人，总是用着右键-复制粘贴，看着就觉得捉急。特别是 Mac 上面，用官方的 Magic Mouse 2 简直就是个灾难（见图）。 macOS 中默认不开启右键选单不说，这个鼠标本身的设计就很智障，竟然只有一个键，右键是通过检测鼠标上的触摸实现的……用起来十分难受。而且 macOS 中，有些应用程序不是所有选项都可以通过鼠标点点点就能点到的，使用 macOS 时不用快捷键真的很难用。</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/MagicMouse2_Flickr.jpg" alt="苹果的Magic Mouse 2 (妙控鼠标2)     [(图片源自Flickr)](https://www.flickr.com/photos/beija/4954437153)"></p><p>那 Windows 呢？个人觉得， Windows 的快捷键也应该记一下，对于效率提升很有用。而且在 Windows 下，不记得快捷键可以用 Alt 键来解决。很多应用都支持 Alt 键 + 其他键实现快捷功能（这也是 macOS 所欠缺的）。比如 Microsoft Office 套装，以及我现在写文章用的 Typora 编辑器，都可以按 Alt 键出提示，并按提示的键来实现进一步的操作。</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/WordAltShortcut.gif" alt="MS Word 2016 按 Alt 快捷键之后的效果"></p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/TyporaAltShortcut.png" alt="Typora 编辑器及多数引用按 Alt 之后的工具栏"></p><p>可能有人会说，那么多快捷键，记到何年何月啊？幸运的是，这其中大多数快捷键都不难记，有几次我不知道快捷键的情况下，靠那个功能的英文名来猜了一下，一按，居然对了。很多程序的快捷键都是基于英文名的，一般都比较符合逻辑（ Vim 除外😂）。也有一些常用的功能，用多几次，不知不觉就记住了。刚开始的时候，可能感觉没什么用，但是记得多了，配套着用，就会发现它的实用性了。我一周推荐一个，也方便大家记住以及练习。如果有时不时看一下我的博客的，每周记一个并不是什么难事啊。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个栏目，主要是每周给大家推荐一个快捷键。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="每周一键" scheme="http://www.jessexu.me/categories/%E6%AF%8F%E5%91%A8%E4%B8%80%E9%94%AE/"/>
     
     
   </entry>
