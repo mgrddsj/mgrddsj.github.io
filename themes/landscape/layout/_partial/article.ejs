@@ -27,6 +27,7 @@
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#lv-container" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
+      <h1 id="评论区"><a href="评论区" class="headerlink" title="评论区"></a>评论区</h1>
       <%- partial('post/tag') %>
       <% if (!index && post.comments) { %>
         <%- partial('livere') %>
