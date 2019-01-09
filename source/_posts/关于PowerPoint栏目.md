@@ -1,10 +1,13 @@
-​---
+
+---
+
 title: 关于“PowerPoint”栏目
 date: 2019-01-09 12:43:11
 categories: PowerPoint
 updated: 
 
-​---
+​
+---
 
 
 本人对于 Microsoft Office 也算是一知半解吧，自我认为算是比身边多数人要懂得多一些（Excel 除外）。特别是做PPT方面，虽然我演讲水平不怎么样，嘴巴不够灵活，但PPT我觉得我做的还是不错的。
