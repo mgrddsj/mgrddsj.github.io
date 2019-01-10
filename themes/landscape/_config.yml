@@ -5,18 +5,18 @@ menu:
 rss: /atom.xml
 
 # Content
-excerpt_link: Read More
+excerpt_link: 查看更多
 fancybox: true
 livere: true
 
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
+- 栏目
+- 标签
+- 标签云
+- 所有文章
+- 最近文章
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -26,13 +26,13 @@ index_widgets:
 
 # widget behavior
 archive_type: 'monthly'
-show_count: false
+show_count: true
 
 # Miscellaneous
 google_analytics:
 gauges_analytics:
 favicon: /favicon.png
 twitter:
-google_plus:
+google_plus: 113053451579323203207
 fb_admins:
 fb_app_id:
