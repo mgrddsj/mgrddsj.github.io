@@ -29,5 +29,5 @@ updated:
 
 如果我把整个窗口都关掉了，或者电脑死机重启之后要重新打开刚刚的页面，也可以用 Ctrl+Shift+T，这可比鼠标方便得多。
 
-![恢复整个窗口](https://raw.githubusercontent.com/mgrddsj/PicLib/master/Ctrl%2BShift%2BT(Window).gif)
+![恢复整个窗口](https://raw.githubusercontent.com/mgrddsj/PicLib/master/Ctrl%2BShift%2BT-Window.gif)
 
