@@ -25,15 +25,15 @@
     <footer class="article-footer">
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
       <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
-      <% } %>
-      <% if (post.comments && theme.valine.enable && theme.valine.appId && theme.valine.appKey ){ %>
-        <a href="<%- url_for(post.path) %>#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="<%- url_for(post.path) %>" itemprop="commentCount"></span>
-          <%= __('comment') %>
-        </a>
+        <a href="<%- post.permalink %>#lv-container" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
       <%- partial('post/tag') %>
+      <% if (!index && post.comments) { %>
+        <font size="5.8" face="Source Code Pro"><strong>评论区</strong></font>
+        <p></p>
+        <p>提示：请先在Simple Writing快速注册(电脑版是用户名输入框)，或用社交账号登陆(SNS Login)后再评论。未登录就输入评论可能导致评论丢失！</p>
+        <%- partial('livere') %>
+      <% } %>
     </footer>
   </div>
   <% if (!index){ %>
@@ -41,15 +41,3 @@
   <% } %>
 </article>
 
-<% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
-<% if (!index && post.comments && theme.valine.enable && theme.valine.appId && theme.valine.appKey){ %>
-  <section id="comments" class="vcomment">
-
-  </section>
-<% } %>

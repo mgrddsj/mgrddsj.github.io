@@ -2,7 +2,7 @@
 
 A brand new default theme for [Hexo].
 
-- [Preview](https://hexojs.github.io/hexo-theme-landscape/)
+- [Preview](http://hexo.io/hexo-theme-landscape/)
 
 ## Installation
 
