@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.jessexu.me/"/>
-  <updated>2019-06-05T07:13:58.966Z</updated>
+  <updated>2019-06-05T07:25:05.368Z</updated>
   <id>http://www.jessexu.me/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.jessexu.me/2019/%E6%AF%8F%E5%91%A8%E4%B8%80%E9%94%AE%E6%9A%82%E6%97%B6%E5%81%9C%E6%9B%B4%E9%80%9A%E7%9F%A5/"/>
     <id>http://www.jessexu.me/2019/每周一键暂时停更通知/</id>
     <published>2019-03-26T12:45:57.000Z</published>
-    <updated>2019-06-05T07:13:58.966Z</updated>
+    <updated>2019-06-05T07:25:05.368Z</updated>
     
     <content type="html"><![CDATA[<p>才刚刚开始，便要说再见</p><p><img src="https://i.loli.net/2019/03/27/5c9a526acf451.jpg" alt="GoodBye"></p><a id="more"></a><p>直到今天（2019年3月26日），我的博客都还未对外公布。主要是因为微信的问题——是的，我又碰上了这个垃圾平台的谜之限制。</p><p>是这样的，我自己测试了一下用微信自带的浏览器打开我的这个博客时，发现微信会自动给我的网站“转码”（其实就是把所有 JavaScript 脚本全部删掉了，同时大大增加访问延时），然后我的网站基本上就废了——所有链接都点击不了了，只能看当前文章，排版也变得稀巴烂。解决方式就是把这个网站的域名绑定到一个公众号上面，同时要求网站要在国内备案。而我的这个 Blog 是托管在 GitHub Pages （国外）上面的，所以没办法备案，而且备案也要受国家监管，不能有一丁点敏感内容。而奇怪的是，同样是企鹅家的产品，QQ 内打开我博客的链接就一点问题都没有。</p><p>要想在微信中分享我博客的链接，访问者得打开链接→右上角…→浏览器打开→查看原网页，非常麻烦。这就关系到我博客的受众了——知道怎么正确打开我的博客的人都已经不需要我这里所写的内容了。“每周一键”这个栏目本来就是给使用电脑不那么熟练的人而设立的，但这么复杂的打开方式就足够把他们完全拦住了。我写这个栏目也就没有意义了。</p><p>所以我这个博客会转型成一个技术型的博客，我会尽我所能，更多地分享一些技术相关的东西，“奇思妙想”、“折腾”、“资源分享”栏目会成为主要的更新对象。“优雅”和“每周一键”栏目都不会在这个博客中更新了。以后我或许会创建一个公众号，专门分享这些大众化的内容。</p><p>其实这种独立博客的存活是真的不容易，今天刚刚看到一个<a href="https://www.v2ex.com/t/548582?p=1" target="_blank" rel="noopener">帖子</a>，能够坚持下来写技术博客的真的很少，而能坚持写下来的大多都是大佬。希望哪一天我也能成为一个大佬吧？（会不会太自负了?）</p>]]></content>
     
@@ -42,7 +42,7 @@
     <link href="http://www.jessexu.me/2019/Ctrl+W/"/>
     <id>http://www.jessexu.me/2019/Ctrl+W/</id>
     <published>2019-03-10T14:14:57.000Z</published>
-    <updated>2019-06-05T07:13:58.966Z</updated>
+    <updated>2019-06-05T07:25:05.368Z</updated>
     
     <content type="html"><![CDATA[<p>上周介绍了打开新的标签页的快捷键，那这周就介绍这个关闭标签页的快捷键吧</p><a id="more"></a><p>正如上面所说的一样，<strong>Ctrl+W</strong> 就是<strong>关闭标签页</strong>的快捷键，同样是 IE, Chrome, Firefox 等所有主流浏览器都适用。</p><p>结合上周介绍的快捷键，浏览网页时用有道词典查个词方便得很，如下图：</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Ctrl%2BW.gif" alt="查词后 Ctrl+W 关闭标签页"></p><p>这个快捷键不单在浏览器有用，大多数有标签/页面/打开文件概念的软件都支持这个快捷键。例如文件资源管理器可以用它关闭当前页面，Word 可以关闭当前的文档，Photoshop 可以关闭当前的图片……我甚至发现在 TI-nSpire 计算器上也可以用这个快捷键关闭当前文件。可见这是个十分通用的快捷键了。</p><hr><h2 id="拓展用法——Ctrl-Shift-W"><a href="#拓展用法——Ctrl-Shift-W" class="headerlink" title="拓展用法——Ctrl+Shift+W"></a>拓展用法——Ctrl+Shift+W</h2><p>在 Mac 上没有像 Alt+F4 这样的快捷键来关闭当前<strong>窗口</strong>，只有 Command+Q 来退出整个软件。那怎么只关闭当前这一个窗口呢？那就在 Ctrl+W 之上加个 Shift —— Ctrl+Shift+W，就可以关闭当前窗口了。对应地，Windows 上部分软件也支持 Ctrl+Shift+W，比如 Chrome，不过一般来说，还是 Alt+F4 要方便一些。</p>]]></content>
     
@@ -62,7 +62,7 @@
     <link href="http://www.jessexu.me/2019/Ctrl+T%20%E5%92%8C%20Ctrl+Shift+T/"/>
     <id>http://www.jessexu.me/2019/Ctrl+T 和 Ctrl+Shift+T/</id>
     <published>2019-03-03T06:14:57.000Z</published>
-    <updated>2019-06-05T07:13:58.966Z</updated>
+    <updated>2019-06-05T07:25:05.368Z</updated>
     
     <content type="html"><![CDATA[<p>浏览器几乎是我们用电脑必用的软件，记住一些浏览器常用的快捷键可以大大地提升效率。今天就给大家介绍两个很实用的快捷键：Ctrl+T 和 Ctrl+Shift+T。</p><a id="more"></a><p>用过比较现代浏览器的人都知道，一般浏览器顶上都有一排“标签页”，而不是像 IE6 那样一个页面开一个窗口，省了任务栏很多空间。标签页作为一个浏览器中的重要概念，学会快捷操作它们是非常重要的。</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/%E6%A0%87%E7%AD%BE%E9%A1%B5.png" alt="标签页"></p><p>标签页对应的英文是”Tab”, 所以 <strong>Ctrl+T</strong> 就是<strong>新建标签页</strong>，这个很好理解，也很好记。而 <strong>Ctrl+Shift+T</strong> 就是新建标签页的相关功能，<strong>重新打开刚刚关闭的标签页</strong>。这两个快捷键都是通用快捷键，无论是IE, Google Chrome, Firefox, 还是 Chromium 内核的浏览器（360、搜狗、遨游等）都可以用。</p><hr><p>为什么这两个快捷键可以带来效率提升呢？下面我就来演示一下：</p><p>在 Google Chrome 浏览器中，Ctrl+T 新建标签页之后可以直接输入网址，或者用默认搜索引擎(国内推荐用 Bing)进行快速搜索。</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Ctrl%2BT.gif" alt="新建标签页并快速搜索"></p><p>假如我不小心把刚刚那个有用的标签页关掉了，这时就可以按下 Ctrl+Shift+T 恢复刚刚关闭的窗口了。</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Ctrl%2BShift%2BT.gif" alt=""></p><p>如果我把整个窗口都关掉了，或者电脑死机重启之后要重新打开刚刚的页面，也可以用 Ctrl+Shift+T，这可比鼠标方便得多。</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Ctrl%2BShift%2BT-Window.gif" alt="恢复整个窗口"></p>]]></content>
     
@@ -82,7 +82,7 @@
     <link href="http://www.jessexu.me/2019/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0-Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     <id>http://www.jessexu.me/2019/编程笔记-Java多线程/</id>
     <published>2019-01-20T12:50:14.000Z</published>
-    <updated>2019-06-05T07:13:58.966Z</updated>
+    <updated>2019-06-05T07:25:05.368Z</updated>
     
     <content type="html"><![CDATA[<p>最近在学校的 NHS* 里做一个有趣的项目——为学校的“赌场之夜”做两个老虎机，编写过程中遇到了些困难，最终学习了 Java 的多线程相关的知识然后解决了问题。</p><a id="more"></a><p>故事：我们学校的 NHS 开展了一个 Project，就是要以“赌场”为主题，举办一个 Winter Formal (“冬季舞会”)。我负责做两台老虎机。本来想偷懒，直接上网上找开源的 HTML5 的实现，但我的计算机老师鼓励我自己用 Java 实现，不要用现成的。我都想好怎么编了，编出来之后竟然不 work，本来应该是动画的地方只出现了转圈圈，程序冻住几秒，并没有按照预期播放动画。经过思考之后，学习了多线程的知识，然后解决了问题。就此记录该过程。</p><hr><p>一开始遇到的问题是这样的：写好了动画的代码，用 Thread.sleep(time) 来实现动画，但是运行的时候却只有鼠标转圈圈，没有动画，但是等几秒后（“动画”完成后），摇奖的结果会显示。估计是运行的时候 Thread 还没有更新 GUI 里面的的内容就 Sleep 了，或者是不是应该叫做被“阻塞”了？此时程序的情况如下图：</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/One%20Thread.gif" alt=""></p><p>于是我就上 YouTube 上面找 Java 多线程相关的教程，找到如下这个<a href="https://youtu.be/VYN-CBtPNiM" target="_blank" rel="noopener">视频</a>（26和27集连起来看）。同时发现这个<a href="https://www.youtube.com/user/thenewboston" target="_blank" rel="noopener">频道</a>有挺多编程相关的教程的，Java、Python……什么都有。推荐一下。（需要梯子）</p><iframe width="560" height="315" src="https://www.youtube.com/embed/VYN-CBtPNiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>其实就是在原来 GUI 的 class 之外再加一个 class（把原来的 Spin 相关的内容迁移到新的 class 里面，然后在 GUI class 里面提供 accessor method 以供修改显示的图片）。第二个 class 要在 class name 后面加上 implements Runnable ，同时把要运行的那段代码放在一个叫 run 的 method 里面（ IDE 会自动提示加上 import java.awt.EventQueue; ）。然后在 GUI class 里面加上下面的代码就行了（我的第二个 class 的名字叫做 “spin”）。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Thread t1 = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Spin(board,slot1Res,slot2Res,slot3Res));</span><br><span class="line">t1.start();</span><br></pre></td></tr></table></figure><p>改好之后程序的程序的架构大概是这样的：</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Two%20Threads.gif" alt=""></p><p>[^NHS]: National Honors Society</p>]]></content>
     
@@ -102,7 +102,7 @@
     <link href="http://www.jessexu.me/2019/Ctrl%20+%20Shift%20+%20V/"/>
     <id>http://www.jessexu.me/2019/Ctrl + Shift + V/</id>
     <published>2019-01-20T04:00:00.000Z</published>
-    <updated>2019-06-05T07:13:58.966Z</updated>
+    <updated>2019-06-05T07:25:05.368Z</updated>
     
     <content type="html"><![CDATA[<p>相信很多人都知道复制粘贴是 Ctrl + C 和 Ctrl + V，而今天要介绍的 Ctrl + Shift + V 则没那么出名，但却能帮上大忙。</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Ctrl%20%2B%20Shift%20%2B%20V.gif" alt=""></p><a id="more"></a><p>复制粘贴是第一生产力，尤其是小时候做手(dǎ)抄(yìn)报的时候，复制粘贴是一个必要的技能。但是我们在网上找资料的时候，常常会复制到一些奇怪的东西——图片、超链接、文字的格式……这些都是我们不想要的。特别是我这种强迫症患者，非要把格式调得整整齐齐才舒服。</p><p>有时候有同学叫我帮忙调一下格式，我一看吓一跳——满屏幕都是大小不一的字，以及明显是从百度百科复制下来的大段文字，中间夹杂着许多蓝色的超链接。一个一个地清除格式非常痛苦，而且有一些稀奇古怪的格式不知道为什么清除不掉。有一次我就直接问他是从哪里复制来的，然后用 Ctrl + Shift + V 大法，从头来过都比慢慢调格式要快😂。</p><p>所以掌握 Ctrl + Shift + V 这个快捷键是很有必要的，很多时候能帮我们免去很多麻烦。那么具体是怎么用的呢？其实很简单：像往常一样复制你想要复制的文字，然后在粘贴的时候，用 Ctrl +Shift + V 就可以了。理论上，这个快捷键是全系统通用的（macOS 上面对应 Cmd + Shift + V），用浏览器的网页也都支持，比如 Google Docs、石墨文档、邮箱写信界面等等。</p><p>但奇怪的是，<a href="https://www.quora.com/Why-does-the-keyboard-shortcut-ctrl+shift+v-not-work-in-Microsoft-office-products" target="_blank" rel="noopener"><strong>Microsoft Office 套件不支持这个快捷键</strong></a>，不过也有解决方法：</p><ol><li><p>手动点“仅粘贴文本”</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Keep%20text%20only.gif" alt=""></p></li><li><p>修改 Office 的快捷键设置（如图所示，方法来自 <a href="https://www.quora.com/Why-does-the-keyboard-shortcut-ctrl+shift+v-not-work-in-Microsoft-office-products" target="_blank" rel="noopener">Quora链接</a>）</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Word%20Set%20Shortcut.gif" alt=""></p></li></ol><p>以上，希望可以帮到大家。感谢你的耐心阅读！</p>]]></content>
     
@@ -123,7 +123,7 @@
     <link href="http://www.jessexu.me/2019/%E5%86%8D%E8%A7%812018%EF%BC%81%E4%BD%A0%E5%A5%BD2019%EF%BC%81/"/>
     <id>http://www.jessexu.me/2019/再见2018！你好2019！/</id>
     <published>2019-01-09T12:43:11.000Z</published>
-    <updated>2019-06-05T07:13:58.966Z</updated>
+    <updated>2019-06-05T07:25:05.368Z</updated>
     
     <content type="html"><![CDATA[<h1 id="2018总结及2019计划"><a href="#2018总结及2019计划" class="headerlink" title="2018总结及2019计划"></a>2018总结及2019计划</h1><p>这其实是一篇学校中文课要求的作业，那我也借此机会，辞旧迎新，发布真正意义上的这个博客的第一篇文章吧</p><a id="more"></a><h1 id="再见，2018！"><a href="#再见，2018！" class="headerlink" title="再见，2018！"></a>再见，2018！</h1><p>2018，说忙不忙，但是也不轻松。回想2018，我除了努力学习，竟然想不到别的东西……看来真的是沉迷学习，<del>日渐消瘦</del>（并没有）了。这一年，我考了人生中头三场AP考试，第一次感受到了GPA带来的学习压力，也第一次体验到了国际学校所带来的与众不同的压力。而我以前在省附（天河省实）的同学们也都升到了各个不同的高中，我听说他们的压力也很大，只不过和我受到的压力有点不同。但我明白了，在这个年龄段，没有谁是可以不努力的，没有谁的压力小，大家虽然有不同的方向、不同的目标，但是<del>掉发</del> 辛苦是不可少的。</p><p>除了学习，我也有很多别的经历。我打开Google Photos （谷歌相册）翻了一番，发现里面满满的都是各种回忆——去了两次日本，一次赏樱花+滑雪，一次在京阪神周边转悠。我们全家都很喜欢日本这个国家，也去过好多次了，但是还是很喜欢去——又干净，人又有礼貌，风景又漂亮，又有独特的文化，每次去都会有不同的体验。我个人也有喜欢日本的独特理由，那里的空气，对我这种鼻炎患者太友好了。我又喜欢喝冰水，日本到处都有冰水喝😂…不知道为什么，身边有些人似乎对日本有些偏见，有点抗拒。我在这里多说一句，我觉得爱国是好的，是一个团结的民族应有的特征。但是不能盲目爱国，始终要客观地看待事实。</p><p>（之后补些旅游的照片上来，我这个博客的封面图也是今年在日本拍的）</p><p>这一年，我也变得更独立了（可能吧？）。我才发现我长这么大了，基本上出街都是父母陪着的。今年我有两次和同学约着自己出去玩，感觉挺不一样的。没有了那么多的约束，更能放开来玩，但也更考验我的自控能力。所幸我也是个“乖宝宝”，我还是可以照顾好自己的。我觉得我也早就是时候脱离“妈宝”这个角色了，毕竟我总是要独立的嘛。</p><p>2018年大概就这么点事吧，总的来说是很丰富多彩的一年。</p><h1 id="你好，2019！"><a href="#你好，2019！" class="headerlink" title="你好，2019！"></a>你好，2019！</h1><p>“新年新气象”，我也来<del>立flag</del> 做新年的计划</p><h3 id="减肥"><a href="#减肥" class="headerlink" title="减肥"></a>减肥</h3><p>减肥当然是必不可少的，这好像是我每一年必有的计划😥。我当然是希望能减下来啊，但是…先吃饱了才有力气减肥啊！</p><h3 id="考好AP"><a href="#考好AP" class="headerlink" title="考好AP"></a>考好AP</h3><p>今年所选的AP科目对于我来说都有一定的挑战性和难度，加上我准备重考去年考差了的AP Physics 1，今年的压力就很大了。我还是要加油！</p><h3 id="争取搞定托福"><a href="#争取搞定托福" class="headerlink" title="争取搞定托福"></a>争取搞定托福</h3><p>争取在今年内搞定托福吧，不能再拖了，加之很多夏校都要求提交托福成绩，托福还是挺重要的。</p><h3 id="坚持更新博客"><a href="#坚持更新博客" class="headerlink" title="坚持更新博客"></a>坚持更新博客</h3><p>这个博客刚开没多久，尽管没有多少人看，我也要保持更新。这将是对我的责任心的培养。</p>]]></content>
     
@@ -143,7 +143,7 @@
     <link href="http://www.jessexu.me/2019/%E5%85%B3%E4%BA%8EPowerPoint%E6%A0%8F%E7%9B%AE/"/>
     <id>http://www.jessexu.me/2019/关于PowerPoint栏目/</id>
     <published>2019-01-09T04:43:11.000Z</published>
-    <updated>2019-06-05T07:13:58.966Z</updated>
+    <updated>2019-06-05T07:25:05.368Z</updated>
     
     <content type="html"><![CDATA[<p>本人对于 Microsoft Office 也算是一知半解吧，自我认为算是比身边多数人要懂得多一些（Excel 除外）。特别是做PPT方面，虽然我演讲水平不怎么样，嘴巴不够灵活，但PPT我觉得我做的还是不错的。</p><a id="more"></a><p>有时我会在知乎或者YouTube上面看到大神做的PPT，也会学习到一些东西。但很多比较酷的东西都是只教方法，不在文章/视频下方放PPT的文件，对于懒人/新手来说，就不是那么友好。我觉得我可以尝试着自己做一些PPT模板，发布出来，<strong>让所有人都可以做出好看的PPT</strong>。</p><p>当然，这个目标不是那么容易达成的。市面上也有很多简单易用的 PowerPoint 插件，像 iSlide, 口袋动画等等，但是，我要做的是傻瓜式的拿到即用的模板。就是在稻壳儿、第一PPT等网站能下载到的模板那样，而这些网站上面的免费模板往往差强人意(不错，但就是差那么点感觉)。我目前想做的是，在这个博客的栏目上面发布一些自制的PPT模板，免费下载，觉得好看、好用的话，可以 Donate (捐款)。</p><p>如果只是模板比较枯燥的话，我还会时不时写一些小技巧(但不会太多)。如果大家想多看一些小技巧的话，可以给我评论留言，我会尽量满足你们的要求。</p>]]></content>
     
@@ -163,7 +163,7 @@
     <link href="http://www.jessexu.me/2019/%E5%85%B3%E4%BA%8E%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB%E6%A0%8F%E7%9B%AE/"/>
     <id>http://www.jessexu.me/2019/关于资源分享栏目/</id>
     <published>2019-01-09T04:42:12.000Z</published>
-    <updated>2019-06-05T07:13:58.966Z</updated>
+    <updated>2019-06-05T07:25:05.368Z</updated>
     
     <content type="html"><![CDATA[<p>我会在这个栏目里面分享各种各样的资源。</p><a id="more"></a><p>资源的类型包括但不限于网盘资源、软件资源、学习资源、有趣的网站等等…</p><p>对于网盘上的资源，如果有链接挂了（找不到文件），可以在评论区留言，或者发送邮件到 <a href="mailto:Jesse_Xu@live.com" target="_blank" rel="noopener">Jesse_Xu@live.com</a> ，我会尽快处理的。</p><p>（原谅我一时语塞，想不到什么好说的了…那就写这么多吧）</p>]]></content>
     
@@ -183,7 +183,7 @@
     <link href="http://www.jessexu.me/2019/%E5%85%B3%E4%BA%8E%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3%E6%A0%8F%E7%9B%AE/"/>
     <id>http://www.jessexu.me/2019/关于奇思妙想栏目/</id>
     <published>2019-01-06T13:00:57.000Z</published>
-    <updated>2019-06-05T07:13:58.966Z</updated>
+    <updated>2019-06-05T07:25:05.368Z</updated>
     
     <content type="html"><![CDATA[<p>正如我在《关于此博客》中所说的，这个栏目一般来说不会谈论技术的东西，而是一些生活中想到的有趣的东西，类似于随笔。</p><a id="more"></a><p>我其实不怎么会写东西，但有时候就是觉得心里面想到一些有趣的事情想要分享一下。我就当这里是一个公开的随笔本子吧。有些东西，发在朋友圈、QQ空间总觉得别扭，发在这里可能是最好的选择吧。</p><p>这里面的文章可能包含很多我的主观观点，可能是我在生活中突然想到，很有“哲理”的东西（我没学过哲学，不知道什么东西可以算是哲理，你也可以理解为我觉得很有道理吧）。反正我觉得大家可以抱着一个开放、悠闲的态度来看这个栏目，觉得有道理、没道理，都可以在评论区说出来。这是一个开放的交流环境。</p><p>好吧，就这样。</p>]]></content>
     
@@ -203,7 +203,7 @@
     <link href="http://www.jessexu.me/2018/%E5%85%B3%E4%BA%8E%E6%AF%8F%E5%91%A8%E4%B8%80%E9%94%AE%E6%A0%8F%E7%9B%AE/"/>
     <id>http://www.jessexu.me/2018/关于每周一键栏目/</id>
     <published>2018-12-28T10:14:57.000Z</published>
-    <updated>2019-06-05T07:13:58.966Z</updated>
+    <updated>2019-06-05T07:25:05.368Z</updated>
     
     <content type="html"><![CDATA[<p>这个栏目，主要是每周给大家推荐一个快捷键。</p><a id="more"></a><p>写这个栏目的初衷，是我觉得在习惯使用各种快捷键之后，用电脑的效率大增。鼠标点点点的确是非常简单直接、容易学习，但是键盘才是真正的效率工具。许多东西，鼠标点半天都还没好，键盘一个快捷键就搞定了，效率高很多。我现在都已经习惯了工作的时候键盘不离手了。</p><p>到现在，我还看见很多不知道 Ctrl+C, Ctrl+V 的人，总是用着右键-复制粘贴，看着就觉得捉急。特别是 Mac 上面，用官方的 Magic Mouse 2 简直就是个灾难（见图）。 macOS 中默认不开启右键选单不说，这个鼠标本身的设计就很智障，竟然只有一个键，右键是通过检测鼠标上的触摸实现的……用起来十分难受。而且 macOS 中，有些应用程序不是所有选项都可以通过鼠标点点点就能点到的，使用 macOS 时不用快捷键真的很难用。</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/MagicMouse2_Flickr.jpg" alt="苹果的Magic Mouse 2 (妙控鼠标2)     [(图片源自Flickr)](https://www.flickr.com/photos/beija/4954437153)"></p><p>那 Windows 呢？个人觉得， Windows 的快捷键也应该记一下，对于效率提升很有用。而且在 Windows 下，不记得快捷键可以用 Alt 键来解决。很多应用都支持 Alt 键 + 其他键实现快捷功能（这也是 macOS 所欠缺的）。比如 Microsoft Office 套装，以及我现在写文章用的 Typora 编辑器，都可以按 Alt 键出提示，并按提示的键来实现进一步的操作。</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/WordAltShortcut.gif" alt="MS Word 2016 按 Alt 快捷键之后的效果"></p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/TyporaAltShortcut.png" alt="Typora 编辑器及多数引用按 Alt 之后的工具栏"></p><p>可能有人会说，那么多快捷键，记到何年何月啊？幸运的是，这其中大多数快捷键都不难记，有几次我不知道快捷键的情况下，靠那个功能的英文名来猜了一下，一按，居然对了。很多程序的快捷键都是基于英文名的，一般都比较符合逻辑（ Vim 除外😂）。也有一些常用的功能，用多几次，不知不觉就记住了。刚开始的时候，可能感觉没什么用，但是记得多了，配套着用，就会发现它的实用性了。我一周推荐一个，也方便大家记住以及练习。如果有时不时看一下我的博客的，每周记一个并不是什么难事啊。</p>]]></content>
     
