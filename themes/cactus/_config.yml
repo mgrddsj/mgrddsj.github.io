@@ -72,9 +72,9 @@ post:
 #   - gravatar: whether to use your Gravatar as the logo
 logo:
   enabled: true
-  width: 640
-  height: 640
-  url: /favicon.png
+  width: 50
+  height: 50
+  url: /favicon_small.png
   gravatar: false
 
 # Customize the favicons.
