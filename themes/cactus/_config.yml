@@ -26,9 +26,9 @@ nav:
 # only 'mail' is an exception.
 social_links:
   github: http://github.com/mgrddsj
-  twitter: /
+#   twitter: /
   facebook: https://www.facebook.com/people/Jesse-Xu/100006169662739
-  linkedin: /
+#   linkedin: /
   mail: mailto:Jesse_Xu@live.com
 
 # Customize the overview with displaying a tagcloud on the index page.
@@ -115,7 +115,7 @@ page_width: 48
 ##############################################################################
 
 # Enable or disable the RSS feed.
-rss: true
+rss: 
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph:
