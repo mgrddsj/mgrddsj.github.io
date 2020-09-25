@@ -2,7 +2,6 @@
 title: 编程笔记 - Java 多线程
 date: 2019-01-20 20:50:14
 categories: 折腾
-updated: 
 ---
 
 最近在学校的 NHS* 里做一个有趣的项目——为学校的“赌场之夜”做两个老虎机，编写过程中遇到了些困难，最终学习了 Java 的多线程相关的知识然后解决了问题。
@@ -20,7 +19,6 @@ updated:
 于是我就上 YouTube 上面找 Java 多线程相关的教程，找到如下这个[视频](https://youtu.be/VYN-CBtPNiM)（26和27集连起来看）。同时发现这个[频道](https://www.youtube.com/user/thenewboston)有挺多编程相关的教程的，Java、Python……什么都有。推荐一下。（需要梯子）
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VYN-CBtPNiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 其实就是在原来 GUI 的 class 之外再加一个 class（把原来的 Spin 相关的内容迁移到新的 class 里面，然后在 GUI class 里面提供 accessor method 以供修改显示的图片）。第二个 class 要在 class name 后面加上 implements Runnable ，同时把要运行的那段代码放在一个叫 run 的 method 里面（ IDE 会自动提示加上 import java.awt.EventQueue; ）。然后在 GUI class 里面加上下面的代码就行了（我的第二个 class 的名字叫做 “spin”）。
 
 ```java
