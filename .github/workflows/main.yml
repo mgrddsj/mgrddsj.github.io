@@ -58,7 +58,7 @@ jobs:
       - name: Check out the pages repo
         uses: actions/checkout@v2
         with:
-              repository: 'mgrddsj.github.io'
+              repository: 'mgrddsj/mgrddsj.github.io'
               ref: 'master'
               path: '.deploy_git'
 
