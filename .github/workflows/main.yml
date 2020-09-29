@@ -49,16 +49,24 @@ jobs:
           hexo clean
           hexo generate
           
+      # Post-generation steps (Updating pages)
+      - name: Get GitHub Token
+        env:
+            GH_TOKEN = ${{ secrets.GH_TOKEN }}
+
+      - name: Set up git
+        run: |
+          git config user.name "mgrddsj"
+          git config user.email "Jesse_Xu@live.com"
+
       - name: Check out the pages repo
         run: |
-          mkdir pages
-          cd pages
-      - uses: actions/checkout@v2
-        with:
-          ref: master
+          git clone --depth 1 --branch=master https://github.com/mgrddsj/mgrddsj.github.io.git .deploy_git
+          cd .deploy_git
+          find . -path ./.git -prune -o -exec rm -rf {} \; 2> /dev/null
+          cd ../
       
-      - name: Copy new files to repo
+      - name: Deploy files to pages
         run: |
-          ls -l
-          cd ..
-          ls -l
+          sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
+          hexo deploy
