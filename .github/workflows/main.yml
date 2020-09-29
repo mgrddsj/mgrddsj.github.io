@@ -1,0 +1,56 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Hexo Generate
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the hexo branch
+on:
+  push:
+    branches: [ hexo ]
+  pull_request:
+    branches: [ hexo ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      
+      # Installs Node.js and its dependencies 
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Print start processing
+        run: echo Hello, world!
+
+      - name: Install Hexo-cli
+        run: npm install -g hexo-cli
+        
+      - name: Install hexo and its plugins
+        run: |
+          npm install
+          npm install hexo-deployer-git --save
+          npm uninstall hexo-generator-index --save
+          npm install hexo-generator-index-pin-top --save
+          
+      - name: Hexo generate
+        run: |
+          hexo clean
+          hexo generate
+          
