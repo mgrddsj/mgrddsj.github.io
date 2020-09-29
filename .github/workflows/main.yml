@@ -66,7 +66,7 @@ jobs:
         run: |
           cd .deploy_git
           find . -path ./.git -prune -o -exec rm -rf {} \; 2> /dev/null
-          cd ../
+          cd ..
       
       - name: Deploy files to pages
         env:
