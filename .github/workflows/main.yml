@@ -56,15 +56,21 @@ jobs:
           git config user.email "Jesse_Xu@live.com"
 
       - name: Check out the pages repo
+        uses: actions/checkout@v2
+        with:
+              repository: 'mgrddsj.github.io'
+              ref: 'master'
+              path: '.deploy_git'
+
+      - name: modifies the pages repo
         run: |
-          git clone --depth 1 --branch=master https://github.com/mgrddsj/mgrddsj.github.io.git .deploy_git
           cd .deploy_git
           find . -path ./.git -prune -o -exec rm -rf {} \; 2> /dev/null
           cd ../
       
       - name: Deploy files to pages
         env:
-            GH_TOKEN = ${{ secrets.GH_TOKEN }}
+            GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
           hexo deploy
