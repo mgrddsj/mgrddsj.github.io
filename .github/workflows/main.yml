@@ -61,8 +61,10 @@ jobs:
 
       - name: modifies the pages repo
         run: |
-          find ./.deploy_git -path ./.git -prune -o -exec rm -rf {} \;
-      
+          cd .deploy_git
+          find .deploy_git -path ./.git -prune -o -exec rm -rf {} \;
+          cd ../
+
       - name: Deploy files to pages
         env:
             GH_TOKEN: ${{ secrets.GH_TOKEN }}
