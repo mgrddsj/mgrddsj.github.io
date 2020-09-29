@@ -60,7 +60,7 @@ jobs:
         with:
               repository: 'mgrddsj/mgrddsj.github.io'
               ref: 'master'
-              path: '.deploy_git'
+              path: .deploy_git
 
       - name: modifies the pages repo
         run: |
