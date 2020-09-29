@@ -55,12 +55,9 @@ jobs:
           git config user.name "mgrddsj"
           git config user.email "Jesse_Xu@live.com"
 
-      - name: Check out the pages repo
-        uses: actions/checkout@v2
-        with:
-              repository: 'mgrddsj/mgrddsj.github.io'
-              ref: 'master'
-              path: .deploy_git
+      - name: Clone pages repo
+        run: |
+          /usr/bin/git clone --depth 1 --branch=master https://github.com/mgrddsj/mgrddsj.github.io.git .deploy_git
 
       - name: modifies the pages repo
         run: |
