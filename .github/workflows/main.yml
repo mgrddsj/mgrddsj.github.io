@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Hexo Generate
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -19,9 +17,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks-out the repository under $GITHUB_WORKSPACE
       - uses: actions/checkout@v2
       
+      # Sets up cache 
       - uses: actions/cache@v2
         with:
           path: ~/.npm
@@ -30,21 +29,17 @@ jobs:
             ${{ runner.os }}-node-
       
       # Installs Node.js and its dependencies 
-      - uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-
-      - name: Print start processing
-        run: echo Hello, world!
 
       - name: Install Hexo-cli
         run: npm install -g hexo-cli
         
       - name: Install hexo and its plugins
         run: |
-          npm install
+          npm ci
           npm install hexo-deployer-git --save
           npm uninstall hexo-generator-index --save
           npm install hexo-generator-index-pin-top --save
@@ -54,3 +49,14 @@ jobs:
           hexo clean
           hexo generate
           
+      - name: Check out the pages repo
+        run: |
+          mkdir pages
+          cd pages
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+      
+      - name: Copy new files to repo
+        run: |
+          ls
