@@ -49,11 +49,7 @@ jobs:
           hexo clean
           hexo generate
           
-      # Post-generation steps (Updating pages)
-      - name: Get GitHub Token
-        env:
-            GH_TOKEN = ${{ secrets.GH_TOKEN }}
-
+      # Post-generation steps (Updating pages)        
       - name: Set up git
         run: |
           git config user.name "mgrddsj"
@@ -67,6 +63,8 @@ jobs:
           cd ../
       
       - name: Deploy files to pages
+        env:
+            GH_TOKEN = ${{ secrets.GH_TOKEN }}
         run: |
           sed -i "s/gh_token/${GH_TOKEN}/g" ./_config.yml
           hexo deploy
