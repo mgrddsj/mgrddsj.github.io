@@ -61,7 +61,7 @@ jobs:
 
       - name: modifies the pages repo
         run: |
-          cd .deploy_git
+          cd $GITHUB_WORKSPACE/.deploy_git
           find .deploy_git -path ./.git -prune -o -exec rm -rf {} \;
           cd ../
 
