@@ -52,8 +52,8 @@ jobs:
       # Post-generation steps (Updating pages)        
       - name: Set up git
         run: |
-          git config user.name "mgrddsj"
-          git config user.email "Jesse_Xu@live.com"
+          git config --global user.name "mgrddsj"
+          git config --global user.email "Jesse_Xu@live.com"
 
       - name: Clone pages repo
         run: |
