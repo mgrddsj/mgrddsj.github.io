@@ -59,12 +59,6 @@ jobs:
         run: |
           /usr/bin/git clone --depth 1 --branch=master https://github.com/mgrddsj/mgrddsj.github.io.git .deploy_git
 
-      - name: modifies the pages repo
-        run: |
-          cd .deploy_git
-          find . -path ./.git -prune -o -exec rm -rf {} \; &> /dev/null
-          cd ../
-
       - name: Deploy files to pages
         env:
             GH_TOKEN: ${{ secrets.GH_TOKEN }}
