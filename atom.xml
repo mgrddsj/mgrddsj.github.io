@@ -3,7 +3,7 @@
   <title>Jesse&#39;s blog</title>
   
   <subtitle>Jesse 的小窝</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="http://www.jessexu.me/atom.xml" rel="self"/>
   
   <link href="http://www.jessexu.me/"/>
   <updated>2019-01-20T12:50:14.000Z</updated>
@@ -14,24 +14,23 @@
     
   </author>
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>编程笔记 - Java 多线程</title>
     <link href="http://www.jessexu.me/2019/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0-Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    <id>http://www.jessexu.me/2019/编程笔记-Java多线程/</id>
+    <id>http://www.jessexu.me/2019/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0-Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/</id>
     <published>2019-01-20T12:50:14.000Z</published>
     <updated>2019-01-20T12:50:14.000Z</updated>
     
-    <content type="html"><![CDATA[<p>最近在学校的 NHS* 里做一个有趣的项目——为学校的“赌场之夜”做两个老虎机，编写过程中遇到了些困难，最终学习了 Java 的多线程相关的知识然后解决了问题。</p><a id="more"></a><p>故事：我们学校的 NHS 开展了一个 Project，就是要以“赌场”为主题，举办一个 Winter Formal (“冬季舞会”)。我负责做两台老虎机。本来想偷懒，直接上网上找开源的 HTML5 的实现，但我的计算机老师鼓励我自己用 Java 实现，不要用现成的。我都想好怎么编了，编出来之后竟然不 work，本来应该是动画的地方只出现了转圈圈，程序冻住几秒，并没有按照预期播放动画。经过思考之后，学习了多线程的知识，然后解决了问题。就此记录该过程。</p><hr><p>一开始遇到的问题是这样的：写好了动画的代码，用 Thread.sleep(time) 来实现动画，但是运行的时候却只有鼠标转圈圈，没有动画，但是等几秒后（“动画”完成后），摇奖的结果会显示。估计是运行的时候 Thread 还没有更新 GUI 里面的的内容就 Sleep 了，或者是不是应该叫做被“阻塞”了？此时程序的情况如下图：</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/One%20Thread.gif" alt></p><p>于是我就上 YouTube 上面找 Java 多线程相关的教程，找到如下这个<a href="https://youtu.be/VYN-CBtPNiM" target="_blank" rel="noopener">视频</a>（26和27集连起来看）。同时发现这个<a href="https://www.youtube.com/user/thenewboston" target="_blank" rel="noopener">频道</a>有挺多编程相关的教程的，Java、Python……什么都有。推荐一下。（需要梯子）</p><iframe width="560" height="315" src="https://www.youtube.com/embed/VYN-CBtPNiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>其实就是在原来 GUI 的 class 之外再加一个 class（把原来的 Spin 相关的内容迁移到新的 class 里面，然后在 GUI class 里面提供 accessor method 以供修改显示的图片）。第二个 class 要在 class name 后面加上 implements Runnable ，同时把要运行的那段代码放在一个叫 run 的 method 里面（ IDE 会自动提示加上 import java.awt.EventQueue; ）。然后在 GUI class 里面加上下面的代码就行了（我的第二个 class 的名字叫做 “spin”）。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Thread t1 = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Spin(board,slot1Res,slot2Res,slot3Res));</span><br><span class="line">t1.start();</span><br></pre></td></tr></table></figure><p>改好之后程序的程序的架构大概是这样的：</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Two%20Threads.gif" alt></p><p>[^NHS]: National Honors Society</p>]]></content>
+    <content type="html"><![CDATA[<p>最近在学校的 NHS* 里做一个有趣的项目——为学校的“赌场之夜”做两个老虎机，编写过程中遇到了些困难，最终学习了 Java 的多线程相关的知识然后解决了问题。</p><span id="more"></span><p>故事：我们学校的 NHS 开展了一个 Project，就是要以“赌场”为主题，举办一个 Winter Formal (“冬季舞会”)。我负责做两台老虎机。本来想偷懒，直接上网上找开源的 HTML5 的实现，但我的计算机老师鼓励我自己用 Java 实现，不要用现成的。我都想好怎么编了，编出来之后竟然不 work，本来应该是动画的地方只出现了转圈圈，程序冻住几秒，并没有按照预期播放动画。经过思考之后，学习了多线程的知识，然后解决了问题。就此记录该过程。</p><hr><p>一开始遇到的问题是这样的：写好了动画的代码，用 Thread.sleep(time) 来实现动画，但是运行的时候却只有鼠标转圈圈，没有动画，但是等几秒后（“动画”完成后），摇奖的结果会显示。估计是运行的时候 Thread 还没有更新 GUI 里面的的内容就 Sleep 了，或者是不是应该叫做被“阻塞”了？此时程序的情况如下图：</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/One%20Thread.gif"></p><p>于是我就上 YouTube 上面找 Java 多线程相关的教程，找到如下这个<a href="https://youtu.be/VYN-CBtPNiM">视频</a>（26和27集连起来看）。同时发现这个<a href="https://www.youtube.com/user/thenewboston">频道</a>有挺多编程相关的教程的，Java、Python……什么都有。推荐一下。（需要梯子）</p><iframe width="560" height="315" src="https://www.youtube.com/embed/VYN-CBtPNiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>其实就是在原来 GUI 的 class 之外再加一个 class（把原来的 Spin 相关的内容迁移到新的 class 里面，然后在 GUI class 里面提供 accessor method 以供修改显示的图片）。第二个 class 要在 class name 后面加上 implements Runnable ，同时把要运行的那段代码放在一个叫 run 的 method 里面（ IDE 会自动提示加上 import java.awt.EventQueue; ）。然后在 GUI class 里面加上下面的代码就行了（我的第二个 class 的名字叫做 “spin”）。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Thread t1 = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Spin(board,slot1Res,slot2Res,slot3Res));</span><br><span class="line">t1.start();</span><br></pre></td></tr></table></figure><p>改好之后程序的程序的架构大概是这样的：</p><p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Two%20Threads.gif"></p><p>[^NHS]: National Honors Society</p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;最近在学校的 NHS* 里做一个有趣的项目——为学校的“赌场之夜”做两个老虎机，编写过程中遇到了些困难，最终学习了 Java 的多线程相关的知识然后解决了问题。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;最近在学校的 NHS* 里做一个有趣的项目——为学校的“赌场之夜”做两个老虎机，编写过程中遇到了些困难，最终学习了 Java 的多线程相关的知识然后解决了问题。&lt;/p&gt;</summary>
     
-    </summary>
     
-      <category term="折腾" scheme="http://www.jessexu.me/categories/%E6%8A%98%E8%85%BE/"/>
+    
+    <category term="折腾" scheme="http://www.jessexu.me/categories/%E6%8A%98%E8%85%BE/"/>
     
     
   </entry>
@@ -39,40 +38,38 @@
   <entry>
     <title>再见2018！你好2019！</title>
     <link href="http://www.jessexu.me/2019/%E5%86%8D%E8%A7%812018%EF%BC%81%E4%BD%A0%E5%A5%BD2019%EF%BC%81/"/>
-    <id>http://www.jessexu.me/2019/再见2018！你好2019！/</id>
+    <id>http://www.jessexu.me/2019/%E5%86%8D%E8%A7%812018%EF%BC%81%E4%BD%A0%E5%A5%BD2019%EF%BC%81/</id>
     <published>2019-01-09T12:43:11.000Z</published>
     <updated>2019-01-10T13:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="2018总结及2019计划"><a href="#2018总结及2019计划" class="headerlink" title="2018总结及2019计划"></a>2018总结及2019计划</h1><p>这其实是一篇学校中文课要求的作业，那我也借此机会，辞旧迎新，发布真正意义上的这个博客的第一篇文章吧</p><a id="more"></a><h1 id="再见，2018！"><a href="#再见，2018！" class="headerlink" title="再见，2018！"></a>再见，2018！</h1><p>2018，说忙不忙，但是也不轻松。回想2018，我除了努力学习，竟然想不到别的东西……看来真的是沉迷学习，<del>日渐消瘦</del>（并没有）了。这一年，我考了人生中头三场AP考试，第一次感受到了GPA带来的学习压力，也第一次体验到了国际学校所带来的与众不同的压力。而我以前在省附（天河省实）的同学们也都升到了各个不同的高中，我听说他们的压力也很大，只不过和我受到的压力有点不同。但我明白了，在这个年龄段，没有谁是可以不努力的，没有谁的压力小，大家虽然有不同的方向、不同的目标，但是<del>掉发</del> 辛苦是不可少的。</p><p>除了学习，我也有很多别的经历。我打开Google Photos （谷歌相册）翻了一番，发现里面满满的都是各种回忆——去了两次日本，一次赏樱花+滑雪，一次在京阪神周边转悠。我们全家都很喜欢日本这个国家，也去过好多次了，但是还是很喜欢去——又干净，人又有礼貌，风景又漂亮，又有独特的文化，每次去都会有不同的体验。我个人也有喜欢日本的独特理由，那里的空气，对我这种鼻炎患者太友好了。我又喜欢喝冰水，日本到处都有冰水喝😂…不知道为什么，身边有些人似乎对日本有些偏见，有点抗拒。我在这里多说一句，我觉得爱国是好的，是一个团结的民族应有的特征。但是不能盲目爱国，始终要客观地看待事实。</p><p>（之后补些旅游的照片上来，我这个博客的封面图也是今年在日本拍的）</p><p>这一年，我也变得更独立了（可能吧？）。我才发现我长这么大了，基本上出街都是父母陪着的。今年我有两次和同学约着自己出去玩，感觉挺不一样的。没有了那么多的约束，更能放开来玩，但也更考验我的自控能力。所幸我也是个“乖宝宝”，我还是可以照顾好自己的。我觉得我也早就是时候脱离“妈宝”这个角色了，毕竟我总是要独立的嘛。</p><p>2018年大概就这么点事吧，总的来说是很丰富多彩的一年。</p><h1 id="你好，2019！"><a href="#你好，2019！" class="headerlink" title="你好，2019！"></a>你好，2019！</h1><p>“新年新气象”，我也来<del>立flag</del> 做新年的计划</p><h3 id="减肥"><a href="#减肥" class="headerlink" title="减肥"></a>减肥</h3><p>减肥当然是必不可少的，这好像是我每一年必有的计划😥。我当然是希望能减下来啊，但是…先吃饱了才有力气减肥啊！</p><h3 id="考好AP"><a href="#考好AP" class="headerlink" title="考好AP"></a>考好AP</h3><p>今年所选的AP科目对于我来说都有一定的挑战性和难度，加上我准备重考去年考差了的AP Physics 1，今年的压力就很大了。我还是要加油！</p><h3 id="争取搞定托福"><a href="#争取搞定托福" class="headerlink" title="争取搞定托福"></a>争取搞定托福</h3><p>争取在今年内搞定托福吧，不能再拖了，加之很多夏校都要求提交托福成绩，托福还是挺重要的。</p><h3 id="坚持更新博客"><a href="#坚持更新博客" class="headerlink" title="坚持更新博客"></a>坚持更新博客</h3><p>这个博客刚开没多久，尽管没有多少人看，我也要保持更新。这将是对我的责任心的培养。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="2018总结及2019计划"><a href="#2018总结及2019计划" class="headerlink" title="2018总结及2019计划"></a>2018总结及2019计划</h1><p>这其实是一篇学校中文课要求的作业，那我也借此机会，辞旧迎新，发布真正意义上的这个博客的第一篇文章吧</p><span id="more"></span><h1 id="再见，2018！"><a href="#再见，2018！" class="headerlink" title="再见，2018！"></a>再见，2018！</h1><p>2018，说忙不忙，但是也不轻松。回想2018，我除了努力学习，竟然想不到别的东西……看来真的是沉迷学习，<del>日渐消瘦</del>（并没有）了。这一年，我考了人生中头三场AP考试，第一次感受到了GPA带来的学习压力，也第一次体验到了国际学校所带来的与众不同的压力。而我以前在省附（天河省实）的同学们也都升到了各个不同的高中，我听说他们的压力也很大，只不过和我受到的压力有点不同。但我明白了，在这个年龄段，没有谁是可以不努力的，没有谁的压力小，大家虽然有不同的方向、不同的目标，但是<del>掉发</del> 辛苦是不可少的。</p><p>除了学习，我也有很多别的经历。我打开Google Photos （谷歌相册）翻了一番，发现里面满满的都是各种回忆——去了两次日本，一次赏樱花+滑雪，一次在京阪神周边转悠。我们全家都很喜欢日本这个国家，也去过好多次了，但是还是很喜欢去——又干净，人又有礼貌，风景又漂亮，又有独特的文化，每次去都会有不同的体验。我个人也有喜欢日本的独特理由，那里的空气，对我这种鼻炎患者太友好了。我又喜欢喝冰水，日本到处都有冰水喝😂…不知道为什么，身边有些人似乎对日本有些偏见，有点抗拒。我在这里多说一句，我觉得爱国是好的，是一个团结的民族应有的特征。但是不能盲目爱国，始终要客观地看待事实。</p><p>（之后补些旅游的照片上来，我这个博客的封面图也是今年在日本拍的）</p><p>这一年，我也变得更独立了（可能吧？）。我才发现我长这么大了，基本上出街都是父母陪着的。今年我有两次和同学约着自己出去玩，感觉挺不一样的。没有了那么多的约束，更能放开来玩，但也更考验我的自控能力。所幸我也是个“乖宝宝”，我还是可以照顾好自己的。我觉得我也早就是时候脱离“妈宝”这个角色了，毕竟我总是要独立的嘛。</p><p>2018年大概就这么点事吧，总的来说是很丰富多彩的一年。</p><h1 id="你好，2019！"><a href="#你好，2019！" class="headerlink" title="你好，2019！"></a>你好，2019！</h1><p>“新年新气象”，我也来<del>立flag</del> 做新年的计划</p><h3 id="减肥"><a href="#减肥" class="headerlink" title="减肥"></a>减肥</h3><p>减肥当然是必不可少的，这好像是我每一年必有的计划😥。我当然是希望能减下来啊，但是…先吃饱了才有力气减肥啊！</p><h3 id="考好AP"><a href="#考好AP" class="headerlink" title="考好AP"></a>考好AP</h3><p>今年所选的AP科目对于我来说都有一定的挑战性和难度，加上我准备重考去年考差了的AP Physics 1，今年的压力就很大了。我还是要加油！</p><h3 id="争取搞定托福"><a href="#争取搞定托福" class="headerlink" title="争取搞定托福"></a>争取搞定托福</h3><p>争取在今年内搞定托福吧，不能再拖了，加之很多夏校都要求提交托福成绩，托福还是挺重要的。</p><h3 id="坚持更新博客"><a href="#坚持更新博客" class="headerlink" title="坚持更新博客"></a>坚持更新博客</h3><p>这个博客刚开没多久，尽管没有多少人看，我也要保持更新。这将是对我的责任心的培养。</p>]]></content>
     
-    <summary type="html">
     
-      &lt;h1 id=&quot;2018总结及2019计划&quot;&gt;&lt;a href=&quot;#2018总结及2019计划&quot; class=&quot;headerlink&quot; title=&quot;2018总结及2019计划&quot;&gt;&lt;/a&gt;2018总结及2019计划&lt;/h1&gt;&lt;p&gt;这其实是一篇学校中文课要求的作业，那我也借此机会，辞旧迎新，发布真正意义上的这个博客的第一篇文章吧&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;2018总结及2019计划&quot;&gt;&lt;a href=&quot;#2018总结及2019计划&quot; class=&quot;headerlink&quot; title=&quot;2018总结及2019计划&quot;&gt;&lt;/a&gt;2018总结及2019计划&lt;/h1&gt;&lt;p&gt;这其实是一篇学校中文课要求的作业，那我也借此机会，辞旧迎新，发布真正意义上的这个博客的第一篇文章吧&lt;/p&gt;</summary>
     
-    </summary>
     
-      <category term="奇思妙想" scheme="http://www.jessexu.me/categories/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3/"/>
+    
+    <category term="奇思妙想" scheme="http://www.jessexu.me/categories/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3/"/>
     
     
   </entry>
   
   <entry>
     <title>关于此博客</title>
-    <link href="http://www.jessexu.me/2018//12/02/%E5%85%B3%E4%BA%8E%E6%AD%A4%E5%8D%9A%E5%AE%A2//"/>
-    <id>http://www.jessexu.me/2018//12/02/关于此博客//</id>
+    <link href="http://www.jessexu.me/12/02/%E5%85%B3%E4%BA%8E%E6%AD%A4%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://www.jessexu.me/12/02/%E5%85%B3%E4%BA%8E%E6%AD%A4%E5%8D%9A%E5%AE%A2/</id>
     <published>2018-12-02T08:58:49.000Z</published>
     <updated>2018-12-26T13:58:53.000Z</updated>
     
-    <content type="html"><![CDATA[<p>[置顶文章]</p><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>在这个博客之前，我其实已经有过3-4个博客了——都放弃了…</p><p>最近又心血来潮，想写点东西，就开了这么个博客。<br>这也是一件好事——让我学习一下怎么样坚持一件事情。</p><p>这个博客里面的博文大多数都会比较短，<del>因为我懒</del> ，同时大家读起来也比较方便。</p><a id="more"></a><h2 id="为什么开博客网站，而不用现成的？"><a href="#为什么开博客网站，而不用现成的？" class="headerlink" title="为什么开博客网站，而不用现成的？"></a>为什么开博客网站，而不用现成的？</h2><p>主要是不想受到平台的限制，比如说微博、微信、简书等等平台都有各种各样的限制，各种花哨的东西太多了，我不想去研究平台的规则，只是想安安静静自己写点东西而已。</p><p>还有就是想有个性一点，建一个网站的话可以有自己的域名，显得很高大上😂。文章数据也可控一些，不会无法导出。</p><p>不过为了大家容易访问，以后可能也会考虑开一个微信公众号😄。</p><h2 id="博客里会有什么东西？"><a href="#博客里会有什么东西？" class="headerlink" title="博客里会有什么东西？"></a>博客里会有什么东西？</h2><p>杂七杂八，什么东西都可能有。</p><p>目前想到的几大主题：</p><ul><li><p><a href="https://www.jessexu.me/categories/%E4%BC%98%E9%9B%85/">优雅</a></p><ul><li><p>如何优雅、高效地使用电脑 </p><p><a href="https://www.jessexu.me/2018/%E5%85%B3%E4%BA%8E%E4%BC%98%E9%9B%85%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li></ul></li><li><p><a href="https://www.jessexu.me/categories/%E6%8A%98%E8%85%BE/">折腾</a></p><ul><li><p>一些折腾/搞机的心得、教程</p><p><a href="https://www.jessexu.me/2018/%E5%85%B3%E4%BA%8E%E6%8A%98%E8%85%BE%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li></ul></li><li><p><a href="https://www.jessexu.me/categories/%E6%AF%8F%E5%91%A8%E4%B8%80%E9%94%AE/">每周一键</a></p><ul><li><p>每个星期向大家介绍一个快捷键</p><p><a href="https://www.jessexu.me/2018/%E5%85%B3%E4%BA%8E%E6%AF%8F%E5%91%A8%E4%B8%80%E9%94%AE%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li></ul></li><li><p><a href="https://www.jessexu.me/categories/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3/">奇思妙想</a></p><ul><li><p>这个主题不谈科技，只是生活中的一些奇思妙想</p><p><a href="https://www.jessexu.me/2019/关于奇思妙想栏目/">(点我跳到栏目介绍)</a></p></li></ul></li><li><p><a href="https://www.jessexu.me/categories/资源分享/">资源分享</a></p><ul><li><p>分享一些资源</p><p><a href="https://www.jessexu.me/2019/关于资源分享栏目/">(点我跳到栏目介绍)</a></p></li></ul></li><li><p><a href="https://www.jessexu.me/categories/PowerPoint/">PowerPoint</a></p><ul><li><p>给大家分享一些做PPT的经验，可能会送一些好看的PPT</p><p><a href="https://www.jessexu.me/2019/关于PowerPoint栏目/">(点我跳到栏目介绍)</a></p></li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>[置顶文章]</p><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>在这个博客之前，我其实已经有过3-4个博客了——都放弃了…</p><p>最近又心血来潮，想写点东西，就开了这么个博客。<br>这也是一件好事——让我学习一下怎么样坚持一件事情。</p><p>这个博客里面的博文大多数都会比较短，<del>因为我懒</del> ，同时大家读起来也比较方便。</p><span id="more"></span><h2 id="为什么开博客网站，而不用现成的？"><a href="#为什么开博客网站，而不用现成的？" class="headerlink" title="为什么开博客网站，而不用现成的？"></a>为什么开博客网站，而不用现成的？</h2><p>主要是不想受到平台的限制，比如说微博、微信、简书等等平台都有各种各样的限制，各种花哨的东西太多了，我不想去研究平台的规则，只是想安安静静自己写点东西而已。</p><p>还有就是想有个性一点，建一个网站的话可以有自己的域名，显得很高大上😂。文章数据也可控一些，不会无法导出。</p><p>不过为了大家容易访问，以后可能也会考虑开一个微信公众号😄。</p><h2 id="博客里会有什么东西？"><a href="#博客里会有什么东西？" class="headerlink" title="博客里会有什么东西？"></a>博客里会有什么东西？</h2><p>杂七杂八，什么东西都可能有。</p><p>目前想到的几大主题：</p><ul><li><p><a href="https://www.jessexu.me/categories/%E4%BC%98%E9%9B%85/">优雅</a></p></li><li><p>如何优雅、高效地使用电脑 </p><p><a href="https://www.jessexu.me/2018/%E5%85%B3%E4%BA%8E%E4%BC%98%E9%9B%85%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li><li><p><a href="https://www.jessexu.me/categories/%E6%8A%98%E8%85%BE/">折腾</a></p></li><li><p>一些折腾/搞机的心得、教程</p><p><a href="https://www.jessexu.me/2018/%E5%85%B3%E4%BA%8E%E6%8A%98%E8%85%BE%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li><li><p><a href="https://www.jessexu.me/categories/%E6%AF%8F%E5%91%A8%E4%B8%80%E9%94%AE/">每周一键</a></p></li><li><p>每个星期向大家介绍一个快捷键</p><p><a href="https://www.jessexu.me/2018/%E5%85%B3%E4%BA%8E%E6%AF%8F%E5%91%A8%E4%B8%80%E9%94%AE%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li><li><p><a href="https://www.jessexu.me/categories/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3/">奇思妙想</a></p></li><li><p>这个主题不谈科技，只是生活中的一些奇思妙想</p><p><a href="https://www.jessexu.me/2019/%E5%85%B3%E4%BA%8E%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li><li><p><a href="https://www.jessexu.me/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/">资源分享</a></p><ul><li>分享一些资源</li></ul><p> <a href="https://www.jessexu.me/2019/%E5%85%B3%E4%BA%8E%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li><li><p><a href="https://www.jessexu.me/categories/PowerPoint/">PowerPoint</a></p></li><li><p>给大家分享一些做PPT的经验，可能会送一些好看的PPT</p><p><a href="https://www.jessexu.me/2019/%E5%85%B3%E4%BA%8EPowerPoint%E6%A0%8F%E7%9B%AE/">(点我跳到栏目介绍)</a></p></li></ul>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;[置顶文章]&lt;/p&gt;
+    <summary type="html">&lt;p&gt;[置顶文章]&lt;/p&gt;
 &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;在这个博客之前，我其实已经有过3-4个博客了——都放弃了…&lt;/p&gt;
 &lt;p&gt;最近又心血来潮，想写点东西，就开了这么个博客。&lt;br&gt;这也是一件好事——让我学习一下怎么样坚持一件事情。&lt;/p&gt;
-&lt;p&gt;这个博客里面的博文大多数都会比较短，&lt;del&gt;因为我懒&lt;/del&gt; ，同时大家读起来也比较方便。&lt;/p&gt;
+&lt;p&gt;这个博客里面的博文大多数都会比较短，&lt;del&gt;因为我懒&lt;/del&gt; ，同时大家读起来也比较方便。&lt;/p&gt;</summary>
     
-    </summary>
+    
     
     
   </entry>
