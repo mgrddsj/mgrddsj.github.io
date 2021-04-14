@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-	<head><meta name="generator" content="Hexo 3.8.0">
+	<head><meta name="generator" content="Hexo 3.9.0">
 		<meta charset="utf-8">
 
 		<title>reveal.js - Test Markdown Element Attributes</title>
@@ -22,7 +22,7 @@
 				<!-- <section data-markdown="example.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section> -->
 
 				<!-- Slides are separated by newline + three dashes + newline, vertical slides identical but two dashes -->
-				<section data-markdown="" data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-element-attributes="{_\s*?([^}]+?)}">>
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-element-attributes="{_\s*?([^}]+?)}">>
 					<script type="text/template">
 						## Slide 1.1
 						<!-- {_class="fragment fade-out" data-fragment-index="1"} -->
@@ -73,7 +73,7 @@
 
 
 
-				<section data-markdown="" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="utf-8">
+				<section data-markdown data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="utf-8">
 					<script type="text/template">
 						# Test attributes in Markdown with default separator
 						## Slide 1 Def <!-- .element: class="fragment highlight-red" data-fragment-index="1" -->
@@ -85,7 +85,7 @@
 					</script>
 				</section>
 
-				<section data-markdown="">
+				<section data-markdown>
 				  <script type="text/template">
 					## Hello world
 					A paragraph
@@ -93,7 +93,7 @@
 				  </script>
 				</section>
 
-				<section data-markdown="">
+				<section data-markdown>
 				  <script type="text/template">
 					## Hello world
 
@@ -103,7 +103,7 @@
 				  </script>
 				</section>
 
-				<section data-markdown="">
+				<section data-markdown>
 				  <script type="text/template">
 					## Hello world
 
