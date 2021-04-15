@@ -18,8 +18,8 @@
   
   <entry>
     <title>Jesse Jiaxi Xu&#39;s senior project - &quot;Make Computers See - Image Processing with OpenCV&quot;</title>
-    <link href="https://www.jessexu.me/basis-senior-project/:lang/abstract/"/>
-    <id>https://www.jessexu.me/basis-senior-project/:lang/abstract/</id>
+    <link href="https://www.jessexu.me/basis-senior-project/en/abstract/"/>
+    <id>https://www.jessexu.me/basis-senior-project/en/abstract/</id>
     <published>2021-04-04T14:51:04.000Z</published>
     <updated>2021-04-14T01:50:02.000Z</updated>
     
@@ -43,9 +43,9 @@
   </entry>
   
   <entry>
-    <title>Jesse Jiaxi Xu&#39;s senior project - &quot;Make Computers See - Image Processing with OpenCV&quot;</title>
-    <link href="https://www.jessexu.me/basis-senior-project/:lang/abstract/"/>
-    <id>https://www.jessexu.me/basis-senior-project/:lang/abstract/</id>
+    <title>Jesse Jiaxi Xu 的毕业生项目：“计算机视觉：基于 OpenCV 的图像处理”</title>
+    <link href="https://www.jessexu.me/basis-senior-project/zh/abstract/"/>
+    <id>https://www.jessexu.me/basis-senior-project/zh/abstract/</id>
     <published>2021-04-04T14:51:04.000Z</published>
     <updated>2021-04-14T01:50:02.000Z</updated>
     
@@ -62,9 +62,9 @@
     
     <category term="Basis" scheme="https://www.jessexu.me/tags/Basis/"/>
     
-    <category term="Senior Project" scheme="https://www.jessexu.me/tags/Senior-Project/"/>
+    <category term="中文" scheme="https://www.jessexu.me/tags/%E4%B8%AD%E6%96%87/"/>
     
-    <category term="English" scheme="https://www.jessexu.me/tags/English/"/>
+    <category term="Senior Project" scheme="https://www.jessexu.me/tags/Senior-Project/"/>
     
   </entry>
   
