@@ -6,7 +6,7 @@
   <link href="https://www.jessexu.me/atom.xml" rel="self"/>
   
   <link href="https://www.jessexu.me/"/>
-  <updated>2021-04-13T15:21:56.000Z</updated>
+  <updated>2021-04-14T01:50:02.000Z</updated>
   <id>https://www.jessexu.me/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jesse Jiaxi Xu&#39;s senior project - &quot;Make Computers See - Image Processing with OpenCV&quot;</title>
+    <link href="https://www.jessexu.me/basis-senior-project/:lang/abstract/"/>
+    <id>https://www.jessexu.me/basis-senior-project/:lang/abstract/</id>
+    <published>2021-04-04T14:51:04.000Z</published>
+    <updated>2021-04-14T01:50:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Jesse-Jiaxi-Xu’s-senior-project-“Make-Computers-See-Image-Processing-with-OpenCV”"><a href="#Jesse-Jiaxi-Xu’s-senior-project-“Make-Computers-See-Image-Processing-with-OpenCV”" class="headerlink" title="Jesse Jiaxi Xu’s senior project: “Make Computers See: Image Processing with OpenCV”"></a>Jesse Jiaxi Xu’s senior project: “Make Computers See: Image Processing with OpenCV”</h3><p>MEMS gyroscopes are a type of sensor that is widely used in phones, cars, and many other devices to detect the rate of rotation. However, the mass production units of the gyroscope may be imprecise due to errors in production. One may need to fine-tune the gyroscopes to achieve higher precision. It can be accomplished by precisely etching parts of it with a laser. To automate the process, photos of the gyroscope will be taken with a microscope camera; a computer program will then recognize parts to be fixed and calculate the actual area to be fixed from the image taken; another program will use the results of the previous program and control the laser etching machine to etch the gyroscope. This project will focus on creating the computer program that recognizes and calculates the parts in the gyroscope to be fixed, and it will integrate with other colleagues’ programs to achieve the overarching goal. OpenCV is an image processing library that will be used in this project to process the image, and the processing algorithm will be implemented with the Python programming language. The major process of the project is to find the contours of parts in the gyroscope; identify certain shapes that make up the gyroscope; calculate the parts to be etched according to the image scale. </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Jesse-Jiaxi-Xu’s-senior-project-“Make-Computers-See-Image-Processing-with-OpenCV”&quot;&gt;&lt;a href=&quot;#Jesse-Jiaxi-Xu’s-senior-project-“Make-C</summary>
+      
+    
+    
+    
+    
+    <category term="Basis" scheme="https://www.jessexu.me/tags/Basis/"/>
+    
+    <category term="Senior Project" scheme="https://www.jessexu.me/tags/Senior-Project/"/>
+    
+    <category term="English" scheme="https://www.jessexu.me/tags/English/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jesse Jiaxi Xu&#39;s senior project - &quot;Make Computers See - Image Processing with OpenCV&quot;</title>
+    <link href="https://www.jessexu.me/basis-senior-project/:lang/abstract/"/>
+    <id>https://www.jessexu.me/basis-senior-project/:lang/abstract/</id>
+    <published>2021-04-04T14:51:04.000Z</published>
+    <updated>2021-04-14T01:50:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Jesse-Jiaxi-Xu-的毕业生项目：“计算机视觉：基于-OpenCV-的图像处理”"><a href="#Jesse-Jiaxi-Xu-的毕业生项目：“计算机视觉：基于-OpenCV-的图像处理”" class="headerlink" title="Jesse Jiaxi Xu 的毕业生项目：“计算机视觉：基于 OpenCV 的图像处理”"></a>Jesse Jiaxi Xu 的毕业生项目：“计算机视觉：基于 OpenCV 的图像处理”</h3><p>MEMS陀螺仪是一种广泛用于手机、汽车等许多设备中的传感器芯片，它可以检测旋转速度。然而，这种陀螺仪的量产单元可能会因为生产中的误差而不精确，人们可能需要对陀螺仪进行微调以达到更高的精度。这种需求可以通过用激光精确地蚀刻陀螺仪的部分来实现。为了实现这一过程的自动化，陀螺仪的照片会用显微镜相机拍摄；然后，一个计算机程序将识别需要修调的部件，并根据拍摄的图像计算出实际需要修调的面积；另一个程序将使用前一个程序的结果，控制激光蚀刻机对陀螺仪进行蚀刻。本项目的重点是创建能够识别和计算陀螺仪中需要修调的部分的计算机程序，并与我所工作的地方的其他同事的程序相结合，以实现总体目标。OpenCV是一个图像处理库，在本项目中，我将使用OpenCV对图像进行处理，处理算法将用Python编程语言实现。项目的主要过程是找到陀螺仪中零件的轮廓，识别出构成陀螺仪特定部分的形状，以及根据图像比例计算出需要蚀刻的部分。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Jesse-Jiaxi-Xu-的毕业生项目：“计算机视觉：基于-OpenCV-的图像处理”&quot;&gt;&lt;a href=&quot;#Jesse-Jiaxi-Xu-的毕业生项目：“计算机视觉：基于-OpenCV-的图像处理”&quot; class=&quot;headerlink&quot; title=&quot;Je</summary>
+      
+    
+    
+    
+    
+    <category term="Basis" scheme="https://www.jessexu.me/tags/Basis/"/>
+    
+    <category term="Senior Project" scheme="https://www.jessexu.me/tags/Senior-Project/"/>
+    
+    <category term="English" scheme="https://www.jessexu.me/tags/English/"/>
+    
+  </entry>
   
   <entry>
     <title>杰西讲故事</title>
