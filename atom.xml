@@ -6,7 +6,7 @@
   <link href="https://www.jessexu.me/atom.xml" rel="self"/>
   
   <link href="https://www.jessexu.me/"/>
-  <updated>2021-04-14T01:53:33.000Z</updated>
+  <updated>2021-04-23T06:49:56.000Z</updated>
   <id>https://www.jessexu.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Week 2 - Image Preprocessing</title>
+    <link href="https://www.jessexu.me/basis-senior-project/week2/"/>
+    <id>https://www.jessexu.me/basis-senior-project/week2/</id>
+    <published>2021-04-22T09:11:31.000Z</published>
+    <updated>2021-04-23T06:49:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello everyone, welcome to my blog again. It has been a busy week for me, and I did some work to preprocess the images for recognition. </p><h2 id="See-my-work"><a href="#See-my-work" class="headerlink" title="See my work!"></a>See my work!</h2><p>In order to give you a clearer idea of what I did, I put some extra efforts to put my work as an web app using the free hosting service Heroku (huge thanks to them!), so that you can get your hands on and experiment with the program I wrote. You may find it here: <a href="https://senior-project.jessexu.me/?file_selection=Week+2">https://senior-project.jessexu.me/?file_selection=Week+2</a> (loading time may be a bit long because the images are being processed in real-time, and make sure you have good Internet)</p><h2 id="What-does-the-program-do"><a href="#What-does-the-program-do" class="headerlink" title="What does the program do?"></a>What does the program do?</h2><p>You may be a bit confused if you head straight into the web app above, so let me explain what is the program I wrote this week doing. </p><p>I will use the parameters that I set as the default of the app when I’m explaining. They turn out to produce pretty good results after I experimented with them. </p><p> <img src="/img/bigz-senior-project-week2.assets/image-20210422173039847.png" alt="Default Parameters"></p><center>Default parameters<center/><p>Let’s start with the original image. It’s a photo of a part of the gyroscope. As mentioned in last week’s blog post, the preprocessing I need to apply on the photo is to denoise the image, find the contours of the part (in this photo’s case, the contours of the broaches/combs), and find the corners of the parts. </p><img src="/img/bigz-senior-project-week2.assets/image-20210423093322870.png" alt="Original image" style="zoom:50%;" /><p>First, we need to turn it into a grayscale image for further processing. OpenCV has a handy method for this: </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br></pre></td></tr></table></figure><img src="/img/bigz-senior-project-week2.assets/image-20210423114958615.png" alt="Grayscale image" style="zoom:50%;" /><p>Then, we can filter out some of the noise in the photo to get a clearer shot by first dilating then eroding the image. It can be done with the following two lines of code. With higher iterations, more noise will be filtered out, but it may also distort the image. </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kernel = np.ones((<span class="number">3</span>, <span class="number">3</span>), np.uint8) <span class="comment"># We use a commonly used 3x3 kernel for this.</span></span><br><span class="line">dilated_img = cv2.dilate(gray, kernel, iterations) <span class="comment"># gray is the grayscale image.</span></span><br><span class="line">eroded_img = cv2.erode(dilate_img, kernel, iterations)</span><br></pre></td></tr></table></figure><img src="/img/bigz-senior-project-week2.assets/image-20210423115652416.png" alt="Dilation and erosion" style="zoom:50%;" /><p>Then, we can apply a threshold to the image with the following code to get a binary image from the de-noised image. You can see that one of the dirty points that did not get removed from previous processes was retained in the threshold processed image. </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cv2.threshold(erosion, threshold_value, <span class="number">255</span>, cv2.THRESH_BINARY)</span><br></pre></td></tr></table></figure><img src="/img/bigz-senior-project-week2.assets/image-20210423120048713.png" alt="threshold" style="zoom:50%;" /><p>With the binary image we have, we can get the contour of the shapes with the code below and draw it out. As you can see, the contours are quite clear.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">contours, hierarchy = cv2.findContours(binary_image, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)</span><br></pre></td></tr></table></figure><img src="/img/bigz-senior-project-week2.assets/image-20210423141418895.png" alt="contours" style="zoom:50%;" /><p>Lastly, we run a Hough Line Transform to detect the lines in the contours image, so we can find the corners and dimensions of the shapes. The code used here is </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lines = cv2.HoughLinesP(img, <span class="number">1</span>, np.pi/<span class="number">180</span>, <span class="number">100</span>,minLineLength=<span class="number">100</span>, maxLineGap=<span class="number">10</span>)</span><br></pre></td></tr></table></figure><img src="/img/bigz-senior-project-week2.assets/image-20210423142525498.png" alt="Hough Line Transform Result" style="zoom:50%;" /><p>However, the results I get here is not very impressive, as it detects way more lines than it should, and there are small line segments clustered together if you zoom in the image. So, I will focus on fine-tuning the parameters for the Hough Line Transform next week. </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Hello everyone, welcome to my blog again. It has been a busy week for me, and I did some work to preprocess the images for recognition. &lt;</summary>
+      
+    
+    
+    
+    
+    <category term="Basis" scheme="https://www.jessexu.me/tags/Basis/"/>
+    
+    <category term="Senior Project" scheme="https://www.jessexu.me/tags/Senior-Project/"/>
+    
+    <category term="English" scheme="https://www.jessexu.me/tags/English/"/>
+    
+  </entry>
   
   <entry>
     <title>Week 1 - Intro to the project</title>
@@ -38,7 +64,7 @@
     
     <category term="Senior Project" scheme="https://www.jessexu.me/tags/Senior-Project/"/>
     
-    <category term="Englis" scheme="https://www.jessexu.me/tags/Englis/"/>
+    <category term="English" scheme="https://www.jessexu.me/tags/English/"/>
     
   </entry>
   
