@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>Week 4 - Improving Corner Detection Results</title>
+      <link href="/basis-senior-project/week4/"/>
+      <url>/basis-senior-project/week4/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome again to my blog! This week, I focused on improving the results of corner detections, so that we can use the results to measure the dimensions of the detected object. </p><h2 id="Try-the-demo"><a href="#Try-the-demo" class="headerlink" title="Try the demo!"></a>Try the demo!</h2><p>As always, I prepared a demo so that you can intuitively understand what was I doing this week. Here’s the link: <a href="https://senior-project.jessexu.me/?file_selection=Week+4">https://senior-project.jessexu.me/?file_selection=Week+4</a> </p><h2 id="Tweaking-Hough-Line-Transform-parameters"><a href="#Tweaking-Hough-Line-Transform-parameters" class="headerlink" title="Tweaking Hough Line Transform parameters"></a>Tweaking Hough Line Transform parameters</h2><p>To start with, I read through some articles and essays online about Hough Line Transform and got a more thorough understanding of the parameters of Hough Line Transform. I think what causes Hough Line Transform to perform poorly is that the lines aren’t exactly straight, and they are kind of “wiggly” (see image below). </p><p><img src="/img/bigz-senior-project-week4.assets/image-20210513164901397.png" alt="lines being wiggly"></p><center> The line in the image is not exactly straight </center><p>I tried reducing the angle step size (theta of HLT), increasing the minimum length of line detected, and then decreasing the threshold of HLT. This gave me a small improvement, but the lines detected are still fragmented and far from usable. </p><p><img src="/img/bigz-senior-project-week4.assets/image-20210513171233499.png" alt="Hough line transform tweaking"></p><center> Hough Line Transform result comparison </center><h2 id="Tweaking-Corner-Detection-Algorithms"><a href="#Tweaking-Corner-Detection-Algorithms" class="headerlink" title="Tweaking Corner Detection Algorithms"></a>Tweaking Corner Detection Algorithms</h2><p>Based on the results, it looks like Hough Line Transform, although being widely used, does not fit my demand very well. It could also be that my tweaking is not right. Anyways, I decided to try tweaking the corner detection algorithms as introduced in last week’s blog post. </p><p>I tried using the two commonly used corner detection algorithms, Harris and Shi-Tomasi, last week. However, they did not produce impressive results either. The points detected tend to cluster on the top left corners of the shapes, and many corners get detected multiple times. </p><p>I had no clue how to fix this problem at first, since I don’t see anything that I did wrong compared to tutorials and essays I found online. Then I realized one significant difference between my use case and that of the tutorials - the tutorials mostly use only one shape when detecting corners, while I tried to detect the corners of multiple shapes. </p><p>So, I decided to add a function to the program that allows users to crop the images to a single shape, and also added an option to limit the points to be detected by the Shi-Tomasi corner detection function. They turn out to work great together, and the final product is finally usable now! (Hooray!)</p><p><img src="/img/bigz-senior-project-week4.assets/image-20210518150435858.png" alt="Image cropping function"></p><center> Image cropping function </center><p><img src="/img/bigz-senior-project-week4.assets/image-20210518150744957.png" alt="Shi-Tomasi detection result"></p><center> Shi-Tomasi Corner Detection Result </center><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>This week, I made improvements to the corner detection function to make produce better results. Next week, I will start investigating on a new topic: Camera calibration, which will allow us to convert the number of pixels on image to real world lengths. </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Basis </tag>
+            
+            <tag> Senior Project </tag>
+            
+            <tag> English </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Week 3 - Corner Detection</title>
       <link href="/basis-senior-project/week3/"/>
       <url>/basis-senior-project/week3/</url>
