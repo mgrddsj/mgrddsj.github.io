@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>Week 5 - Investigating Camera Calibration</title>
+      <link href="/basis-senior-project/week5/"/>
+      <url>/basis-senior-project/week5/</url>
+      
+        <content type="html"><![CDATA[<p>Hi there! Welcome to my blog post for the fifth week. It was a fairly short week due to the Labour Day holiday (I hope you enjoyed it). For this week, I focused on researching camera calibration. </p><p><strong>Note</strong>: It is highly recommended to view this blog post on my personal blog site: <a href="https://www.jessexu.me/basis-senior-project/week5/">https://www.jessexu.me/basis-senior-project/week5/</a></p><h2 id="See-it-yourself"><a href="#See-it-yourself" class="headerlink" title="See it yourself!"></a>See it yourself!</h2><p>If you followed my blog posts before, you know it, here’s the demo that you can try by yourself: <a href="https://senior-project.jessexu.me/?file_selection=Week+5">https://senior-project.jessexu.me/?file_selection=Week+5</a> </p><h2 id="What-is-camera-calibration"><a href="#What-is-camera-calibration" class="headerlink" title="What is camera calibration?"></a>What is camera calibration?</h2><p>Camera calibration allows us to get the intrinsic parameters, extrinsic parameters, and distortion coefficients of a camera. With these parameters, we may remove camera lens distortion, measure lengths, and more. We usually use a checkerboard pattern or a symmetrical circles pattern to calibrate the camera, since these shapes can be easily recognized by computer algorithms. In my case, I will use a checkerboard pattern for camera calibration because it’s the most used method. </p><p><img src="/img/bigz-senior-project-week5.assets/Common-patterns-in-the-camera-calibration-process.png" alt="Common-patterns-in-the-camera-calibration-process"></p><center>Common patterns in camera calibration process <a href="https://www.researchgate.net/figure/Common-patterns-in-the-camera-calibration-process_fig25_312656445">(Image source)</a></center><p>If you want to learn more about camera calibration, MathWorks has a decent explanation of it: <a href="https://www.mathworks.com/help/vision/ug/camera-calibration.html">https://www.mathworks.com/help/vision/ug/camera-calibration.html</a> </p><h2 id="Preliminary-work-I-did"><a href="#Preliminary-work-I-did" class="headerlink" title="Preliminary work I did"></a>Preliminary work I did</h2><p>I did not do much since it was a short week. Since I don’t have easy access to the microscopic camera that will be used in production and find an appropriately sized checkerboard for the microscopic camera easily, I decided to experiment with my phone’s camera. I printed off a 7*9 checkerboard pattern with each square being 20*20 mm, and took a picture of the checkerboard with my phone. I then put it into OpenCV to see if the checkerboard pattern can be detected. It turns out that the checkerboard got detected perfectly.</p><p><img src="/img/bigz-senior-project-week5.assets/45b9681d17106869a9bceecd161cafa22c1c5b604fd33abe12eabeca.jpeg" alt="Detection result"></p><center>Checkerboard detection result</center><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>This week, I started investigating on camera calibration and ran a test on recognizing the checkerboard pattern. Next week, I will try to get the parameters of the camera through camera calibration. </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Basis </tag>
+            
+            <tag> Senior Project </tag>
+            
+            <tag> English </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Week 4 - Improving Corner Detection Results</title>
       <link href="/basis-senior-project/week4/"/>
       <url>/basis-senior-project/week4/</url>
