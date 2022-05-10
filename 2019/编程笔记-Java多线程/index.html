@@ -63,7 +63,7 @@
 		</script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 <body class="max-width mx-auto px3 ltr">
     
@@ -179,7 +179,7 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VYN-CBtPNiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 其实就是在原来 GUI 的 class 之外再加一个 class（把原来的 Spin 相关的内容迁移到新的 class 里面，然后在 GUI class 里面提供 accessor method 以供修改显示的图片）。第二个 class 要在 class name 后面加上 implements Runnable ，同时把要运行的那段代码放在一个叫 run 的 method 里面（ IDE 会自动提示加上 import java.awt.EventQueue; ）。然后在 GUI class 里面加上下面的代码就行了（我的第二个 class 的名字叫做 “spin”）。
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Thread t1 = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Spin(board,slot1Res,slot2Res,slot3Res));</span><br><span class="line">t1.start();</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Thread</span> <span class="variable">t1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Thread</span>(<span class="keyword">new</span> <span class="title class_">Spin</span>(board,slot1Res,slot2Res,slot3Res));</span><br><span class="line">t1.start();</span><br></pre></td></tr></table></figure>
 
 <p>改好之后程序的程序的架构大概是这样的：</p>
 <p><img src="https://raw.githubusercontent.com/mgrddsj/PicLib/master/Two%20Threads.gif"></p>
