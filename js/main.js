@@ -32,10 +32,10 @@ $(document).ready(function() {
     /**
      * Display the menu on hi-res laptops and desktops.
      */
-    if ($(document).width() >= 1440) {
+    // if ($(document).width() >= 1440) {
       menu.css("visibility", "visible");
       menuIcon.addClass("active");
-    }
+    // }
 
     /**
      * Display the menu if the menu icon is clicked.
@@ -59,11 +59,11 @@ $(document).ready(function() {
         var topDistance = menu.offset().top;
 
         // hide only the navigation links on desktop
-        if (!nav.is(":visible") && topDistance < 50) {
-          nav.show();
-        } else if (nav.is(":visible") && topDistance > 100) {
-          nav.hide();
-        }
+        // if (!nav.is(":visible") && topDistance < 50) {
+        //   nav.show();
+        // } else if (nav.is(":visible") && topDistance > 100) {
+        //   nav.hide();
+        // }
 
         // on tablet, hide the navigation icon as well and show a "scroll to top
         // icon" instead
